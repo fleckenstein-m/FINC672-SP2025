@@ -55,7 +55,7 @@ md"""
 TITLE = "FINC 672 - Workshop in Finance: Empirical Methods"
 
 # ╔═╡ a0057e4c-0bcf-4970-8a2b-0412ad5af510
-SUBTITLE = "Spring 2024"
+SUBTITLE = "Spring 2025"
 
 # ╔═╡ 4be56e57-fea0-4fbe-9659-44bed594b1b2
 INSTITUTION = "University of Delaware"
@@ -87,7 +87,7 @@ available at `https://username.github.io/YourPackage.jl/` then the pre-path shou
 
 # ╔═╡ 88e1e91d-0d48-42e0-b4ab-4866624fd745
 begin
-	PREPATH = "FINC672-SP2024"
+	PREPATH = "FINC672-SP2025"
 	@skip_as_script PREPATH = ""
 end
 
