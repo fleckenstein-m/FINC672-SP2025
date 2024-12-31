@@ -42,6 +42,7 @@ Office hours will be held in person on Mondyas, 8.00am-9:30am, 310 Purnell Hall 
 
 ## Canvas Page
 [Link](https://external.ink?to=udel.instructure.com/courses/1837427)
+<a href="https://udel.instructure.com/courses/1837427" target="_blank" rel="noopener noreferrer">CANVAS</a>
 
 
 ## Course Overview
