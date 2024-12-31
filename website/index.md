@@ -3,9 +3,9 @@
 
 
 * **Instructor:** Matthias Fleckenstein, [mflecken@udel.edu](mailto:mflecken@udel.edu)
-* **Class Times:** Tuesdays and Thursdays, 11.10am-12:30pm 
-* **Class Location:** FINTECH 514
-* **Office Hours:** Tuesdays and Thursdays, 1.00pm-2:00pm, 310 Purnell Hall or by appointment.
+* **Class Times:** Tuesdays and Thursdays, 2.20pm-3:40pm 
+* **Class Location:** Purnell Hall 114
+* **Office Hours:** Mondays, 8.00am-9:30am, 310 Purnell Hall or by appointment.
 
 @def mintoclevel=2 
 @def maxtoclevel=3
@@ -28,20 +28,20 @@
 |             | FINC-672 (Section 010)        | 
 | :--------:  | :----------------------------:| 
 | Day(s)      | Tue, Thu                      | 
-| Time        | 11.10am - 12.30pm             | 
-| Location    | FINTECH 514                   | 
+| Time        | 2.20pm - 3.40pm               | 
+| Location    | Purnell Hall 114              | 
 
 
 ## Office Hours
-Office hours will be held in person on Tuesdays and Thursdays, 1.00pm-2:00pm, 310 Purnell Hall or by appointment.
+Office hours will be held in person on Mondyas, 8.00am-9:30am, 310 Purnell Hall or by appointment.
 
 
 ## Course Webpage
-[https://fleckenstein-m.github.io/FINC672-SP2024/](https://fleckenstein-m.github.io/FINC672-SP2024/)
+[https://fleckenstein-m.github.io/FINC672-SP2024/](https://fleckenstein-m.github.io/FINC672-SP2025/)
 
 
 ## Canvas Page
-[Link](https://external.ink?to=udel.instructure.com/courses/1763768)
+[Link](https://external.ink?to=udel.instructure.com/courses/1837427)
 
 
 ## Course Overview
@@ -74,11 +74,11 @@ After completing this course, students will
 
 
 ## Course Syllabus
-[Syllabus](./assets/FINC672_Syllabus_SP24.pdf)
+[Syllabus](./assets/FINC672_Syllabus_SP25.pdf)
 
 
 ## Course Materials
-All course materials will be posted on the course webpage at [https://fleckenstein-m.github.io/FINC672-SP2024/](https://fleckenstein-m.github.io/FINC672-SP2024/).
+All course materials will be posted on the course webpage at [https://fleckenstein-m.github.io/FINC672-SP2025/](https://fleckenstein-m.github.io/FINC672-SP2025/).
 
 
 
@@ -95,17 +95,17 @@ Your final grade is based on i) two midterm exams, ii) a final exam, and iii) cl
 
 ## Exam Schedule
 - Midterm 1
-  - *March 5, 2024* 
-  - Time: 11.10am - 12.30pm. 
-  - Location: Memorial Hall 126
+  - *March 6, 2025* 
+  - Time: 2.20pm - 3.40pm 
+  - Location: Purnell Hall 114
 - Midterm 2
-  - *April 16, 2024* 
-  - Time: 11.10am - 12.30pm. 
-  - Location: Memorial Hall 126
+  - *April 17, 2025* 
+  - Time: 2.20pm - 3.40pm
+  - Location: Purnell Hall 114
 - Final Exam
-  - *May 19, 2024*
-  - Time: 11.30am - 1.30pm
-  - Location: FINTECH 514
+  - *TBD*
+  - Time: TBD
+  - Location: TBD
 
 
 ## Assessment Component: Class Participation
@@ -118,7 +118,7 @@ You are expected to come to class and be prepared to answer questions on the mat
 The copyright notice to be included in any copies and other derivative work of this material is:
 
 ```
-Copyright 2024 Matthias Fleckenstein, University of Delaware, Lerner College of Business & Economics, mflecken@udel.edu
+Copyright 2025 Matthias Fleckenstein, University of Delaware, Lerner College of Business & Economics, mflecken@udel.edu
 ```
 
 ![](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png) This is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
