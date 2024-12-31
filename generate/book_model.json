@@ -1,0 +1,162 @@
+[
+    {
+        "title": "Julia Programming Fundamentals",
+        "contents": [
+	        {
+                "name": "Variables, Function, Control-Flow",
+                "notebook_path": "notebooks/Lect01/Lect01_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Julia Data Structures I",
+                "notebook_path": "notebooks/Lect02/Lect02_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Julia Data Structures II",
+                "notebook_path": "notebooks/Lect03/Lect03_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Julia Data Structures III",
+                "notebook_path": "notebooks/Lect04/Lect04_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Dates and Missing Values",
+                "notebook_path": "notebooks/Lect05/Lect05_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Tabular Data and File I/O",
+                "notebook_path": "notebooks/Lect06/Lect06_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Data Visualization",
+                "notebook_path": "notebooks/Lect07/Lect07_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Data Analysis Techniques",
+                "notebook_path": "notebooks/Lect08/Lect08_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            }
+        ]
+    },
+    {
+        "title": "Applications",
+        "contents": [
+	        {
+                "name": "Getting Data from Yahoo Finance",
+                "notebook_path": "notebooks/Lect09/Lect09_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Interactive Data Visualization",
+                "notebook_path": "notebooks/Lect10/Lect10_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Using Web APIs for Data Collection",
+                "notebook_path": "notebooks/Lect11/Lect11_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Introduction to Portfolio Mathematics",
+                "notebook_path": "notebooks/Lect12/Lect12_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Mean-Variance Analysis",
+                "notebook_path": "notebooks/Lect13/Lect13_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "CAPM",
+                "notebook_path": "notebooks/Lect14/Lect14_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Efficient Markets",
+                "notebook_path": "notebooks/Lect15/Lect15_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Performance Evaluation",
+                "notebook_path": "notebooks/Lect16/Lect16_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            }
+
+        ]
+    },    
+    {
+        "title": "Assignments",
+        "contents": [
+            {
+                "name": "Assignment 01",
+                "notebook_path": "notebooks/Assignments/Assignment_01_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Assignment 02",
+                "notebook_path": "notebooks/Assignments/Assignment_02_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Assignment 03",
+                "notebook_path": "notebooks/Assignments/Assignment_03_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Assignment 04",
+                "notebook_path": "notebooks/Assignments/Assignment_04_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Assignment 05",
+                "notebook_path": "notebooks/Assignments/Assignment_05_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Assignment 06",
+                "notebook_path": "notebooks/Assignments/Assignment_06_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Assignment 07",
+                "notebook_path": "notebooks/Assignments/Assignment_07_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Assignment 08",
+                "notebook_path": "notebooks/Assignments/Assignment_08_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            }
+       ]
+    }
+]
