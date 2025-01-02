@@ -105,6 +105,7 @@ show_section_number = false
 # ╔═╡ 01a2336a-5c04-4d5a-bb0b-a9c704517dbf
 pages = [
 	(page = "/calendar/", title = "Calendar"),
+	(page = "/screenshare/", title = "Viewer"),
 	(page = "/installation/", title = "Software installation"),
 	(page = "/whyjulia/", title = "Why Julia?"),
 	(page = "/notebooksolutions/", title = "Solutions to Lecture Notebooks"),
