@@ -107,9 +107,9 @@ Your final grade is based on i) two midterm exams, ii) a final exam, and iii) cl
   - Time: 2.20pm - 3.40pm
   - Location: Purnell Hall 114
 - Final Exam
-  - *TBD*
-  - Time: TBD
-  - Location: TBD
+  - *May 18, 2025*
+  - Time: 2.00pm - 4.00pm
+  - Location: Purnell Hall 114
 
 
 ## Assessment Component: Class Participation
