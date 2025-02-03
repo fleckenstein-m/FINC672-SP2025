@@ -17,7 +17,7 @@ begin
 	<p style="padding-bottom:1cm"> </p>
 	<p align=center style="font-size:25px; font-family:family:Georgia"> <b> Julia Fundamentals </b> <p>
 	<p style="padding-bottom:1cm"> </p>
-	<p align=center style="font-size:25px; font-family:family:Georgia"> Spring 2024 <p>
+	<p align=center style="font-size:25px; font-family:family:Georgia"> Spring 2025 <p>
 	<p style="padding-bottom:0.5cm"> </p>
 	<div align=center style="font-size:20px; font-family:family:Georgia"> Prof. Matt Fleckenstein </div>
 	<p style="padding-bottom:0.05cm"> </p>
@@ -51,9 +51,7 @@ begin
 end
 
 # ╔═╡ 15965456-03b5-41fc-bd5a-e0334f2e48f1
-md"""
-#
-"""
+vspace
 
 # ╔═╡ 965c2f3a-7aed-48db-9f34-880812267c2a
 md"""
@@ -78,9 +76,7 @@ md"""
 """
 
 # ╔═╡ 6d90d638-b7c1-4e0b-a1af-8b0cdfa943b2
-md"""
-#
-"""
+vspace
 
 # ╔═╡ f406efa1-c642-498a-8bf4-cd4ddcd35f9f
 md"""
@@ -89,19 +85,13 @@ md"""
 """
 
 # ╔═╡ ade0df3a-f591-4c55-8032-c83005daa18a
-let
 
-end
 
 # ╔═╡ 807e79b5-4c2c-446d-8018-8b1d43336255
-let
 
-end
 
 # ╔═╡ 8e7f76a8-aef0-405f-b7e1-50ca7d98d6a1
-md"""
-#
-"""
+vspace
 
 # ╔═╡ 13109b52-c7b4-4260-9607-9ab2793efef7
 md"""
@@ -114,14 +104,15 @@ md"""
 	```
 	- This is to ensure that the variables we define are only known to Julia inside the cell.
 	- This means that we can redefine `name` and `age` somewhere else in the notebook.
-	- If we leave out `let` and `end`, the writing `age = 10` somewhere else in the notebook will give us an error.
-	- Within a cell, we can define new values for an existing variable. Julia will simply override the previous value with the new one.
+	- If we leave out `let` and `end`, then writing `age = 10` somewhere else in the notebook will give us an error.
+	- Within a `let`/`end` cell, we can define new values for an existing variable. Julia will simply override the previous value with the new one.
 """
 
 # ╔═╡ 9bf34305-6dec-46e2-95b4-c7b5d99a61e4
-let
 
-end
+
+# ╔═╡ f73335a8-d848-4ee1-a6ce-c566a78faa5b
+vspace
 
 # ╔═╡ 26961c2c-7675-4c4c-aa1f-c148ef6a505c
 md"""
@@ -138,22 +129,13 @@ md"""
 """
 
 # ╔═╡ 772624fc-0952-48f7-8d8f-f82231f39360
-# ╠═╡ disabled = true
-#=╠═╡
-begin
 
-end
-  ╠═╡ =#
 
 # ╔═╡ 2b6a6c20-3533-48c2-86c1-4d374c8be563
-begin 
 
-end
 
 # ╔═╡ aef0ecc7-ad76-4888-ad41-e54123d16d07
-md"""
-#
-"""
+vspace
 
 # ╔═╡ 9aacb4dd-4d6e-4b62-87fa-19e364b83c38
 md"""
@@ -166,9 +148,7 @@ let
 end
 
 # ╔═╡ 91a0bd38-0784-4123-876b-85d7361eb579
-md"""
-#
-"""
+vspace
 
 # ╔═╡ 55a0a539-b89e-4544-9a8f-a6df6218c73b
 md"""
@@ -181,9 +161,7 @@ let
 end
 
 # ╔═╡ 33f27100-64c9-47ef-b60c-62beba7af90c
-md"""
-#
-"""
+vspace
 
 # ╔═╡ cb046dfb-4007-4216-9743-9456e8e4d250
 md"""
@@ -192,8 +170,11 @@ md"""
 
 # ╔═╡ 7ed413c6-c0e5-4b85-b4dc-08666c418b28
 let
-
+	
 end
+
+# ╔═╡ a467b6ec-5d33-443b-8583-906f8af37e48
+vspace
 
 # ╔═╡ 25c65694-fee6-4a51-bef6-6e8226bf97a0
 md"""
@@ -210,9 +191,7 @@ md"""
 """
 
 # ╔═╡ 2d20bd5f-e43e-4ff6-9080-0166046c8223
-md"""
-#
-"""
+vspace
 
 # ╔═╡ c94cad38-5363-4964-bc42-02010e0a506c
 md"""
@@ -229,9 +208,7 @@ md"""
 
 
 # ╔═╡ c41f8840-5081-421e-9a2e-1b145f00b2ba
-md"""
-#
-"""
+vspace
 
 # ╔═╡ aa452762-85fc-49c3-8e90-1da5d208d1b9
 md"""
@@ -248,9 +225,7 @@ md"""
 """
 
 # ╔═╡ 1c2d78ab-ab20-424f-a532-b9e26dbc34b5
-md"""
-#  
-"""
+vspace
 
 # ╔═╡ 18716ab1-6ffc-43fa-a9b1-786effbce57d
 md"""
@@ -264,9 +239,7 @@ md"""
 
 
 # ╔═╡ 29cf39dc-62c5-4a57-add9-32c96c5efb95
-md"""
-#
-"""
+vspace
 
 # ╔═╡ ab728c25-7523-4f17-be2a-04f8d69a1182
 md"""
@@ -283,6 +256,9 @@ md"""
 
 # ╔═╡ 17febe2d-ac87-496b-9ebe-25da47922967
 
+
+# ╔═╡ 450feddc-493c-48b2-894b-0fd9d4b97d21
+vspace
 
 # ╔═╡ be960870-e0ff-49a3-b14b-dd7716edf25b
 md"""
@@ -302,9 +278,7 @@ return result
 """
 
 # ╔═╡ e060e675-412f-4405-9bd1-eca0501a1b48
-md"""
-#
-"""
+vspace
 
 # ╔═╡ d05e6344-74af-4fc6-b88d-6ec8204e1386
 md"""
@@ -317,9 +291,7 @@ md"""
 """
 
 # ╔═╡ 3dad3232-da88-4f40-8faf-6ecaf2cf90e5
-md"""
-#
-"""
+vspace
 
 # ╔═╡ 217cdb78-2aa9-496e-9daa-f20f8e762bf3
 md"""
@@ -331,9 +303,7 @@ numbers together:
 
 
 # ╔═╡ bbd1e1c4-11f8-4e9e-9b53-d5111fe83342
-md"""
-#
-"""
+vspace
 
 # ╔═╡ 4dd59b38-5e55-4272-8570-650061cb9edb
 md"""
@@ -352,9 +322,7 @@ And it works also with floats
 
 
 # ╔═╡ 9a2f2002-9bc6-4386-a579-b3903f8b61e1
-md"""
-#
-"""
+vspace
 
 # ╔═╡ 766f70c4-afc4-4e31-86f2-575ee5604d30
 md"""
@@ -366,9 +334,7 @@ md"""
 
 
 # ╔═╡ 5941aeae-096f-477d-9f8d-99d0de53b527
-md"""
-#
-"""
+vspace
 
 # ╔═╡ d1f1e579-de69-4380-acee-9f8793f3f256
 md"""
@@ -378,15 +344,58 @@ md"""
 """
 
 # ╔═╡ c756ea1a-af25-4152-85f2-7e75b9f18d5b
-md"""
-#
-"""
+vspace
 
 # ╔═╡ 3b659642-6f7f-43ba-9f3d-99561a36e2c0
+let
 
+end
 
 # ╔═╡ ce6c05f7-a5a4-4380-bf19-b5e801df1c04
+let
 
+end
+
+# ╔═╡ 40d3452c-bec1-4c54-9e69-2417367de127
+vspace
+
+# ╔═╡ 26c5b913-8260-45ea-a839-bf038d624fcb
+md"""
+## Anonymous Functions
+"""
+
+# ╔═╡ 11759565-7562-4258-8fe8-deadbadc8bb8
+md"""
+- Functions can also be written as so-called __Anonymous Functions__.
+- Let's look at an example.
+"""
+
+# ╔═╡ 4834b5da-9f23-48e2-82a7-0cedf261101e
+
+
+# ╔═╡ cdd4ddae-6ef7-4a94-a7c8-4ed622837ba8
+md"""
+- What this does is to define an anonymous function which we labeled __g__.
+- This function takes a number as input and multiplies it by 5.
+"""
+
+# ╔═╡ 6b22f5c0-e118-4a43-9b96-519dc5e566f6
+
+
+# ╔═╡ 66ed2a3c-f366-4db5-9c5a-5939a2476e82
+md"""
+- This also works with more than one argument. 
+- Let's define an anonymous function that takes to numbers and multiplies them, and let's label the function __h__.
+"""
+
+# ╔═╡ 806f3420-14ef-4b02-9cac-6bfc4e670286
+
+
+# ╔═╡ 4a9415a5-f72d-400d-94d7-2056fe7a5118
+
+
+# ╔═╡ 51bc3d85-355b-4782-a316-130fcbef9149
+vspace
 
 # ╔═╡ 28e15a84-5b59-4732-ae2b-97398b75b987
 md"""
@@ -401,9 +410,7 @@ md"""
 """
 
 # ╔═╡ 33e4df84-304e-4047-a8bc-c9f97bc8ab38
-md"""
-#
-"""
+vspace
 
 # ╔═╡ 7da6031d-600a-4100-ba62-0e312052eba7
 md"""
@@ -415,9 +422,7 @@ md"""
 """
 
 # ╔═╡ 62c6d81a-4859-4dc5-9714-b44c117f6aca
-md"""
-#
-"""
+vspace
 
 # ╔═╡ e8f7c3ce-256a-4291-b1e4-73dd0c11329d
 md"""
@@ -427,12 +432,11 @@ md"""
 # ╔═╡ b5d6e2ae-5ea1-4ed6-9a9e-8bf9c108e46c
 let
 
+	
 end
 
 # ╔═╡ 44d36e73-fb3b-4c12-83c7-cc4875927d8d
-md"""
-#
-"""
+vspace
 
 # ╔═╡ 5766ea83-6a34-4968-88f2-387337e06499
 md"""
@@ -444,6 +448,9 @@ md"""
 
 # ╔═╡ ce2dbd2a-a5b8-4b9f-9ea6-3932029f4069
 
+
+# ╔═╡ b786af85-c8cf-47fe-a546-84031670a5a0
+vspace
 
 # ╔═╡ 01cd64f7-e024-4def-a8b7-0a03f4276033
 md"""
@@ -459,9 +466,7 @@ md"""
 """
 
 # ╔═╡ 31338853-5fce-41d8-8366-a0cd5cd8e1ac
-md"""
-#
-"""
+vspace
 
 # ╔═╡ 8134e48e-0f43-44f4-93ef-91cbef4e7442
 md"""
@@ -471,6 +476,9 @@ loop:
 
 # ╔═╡ cb389ce1-19b2-447e-af81-27b040b94ee5
 
+
+# ╔═╡ 503e2b52-8dfa-4bad-a504-82fe00612a58
+vspace
 
 # ╔═╡ 9d85e2dd-e003-4b89-92c4-7f863583770f
 md"""
@@ -483,13 +491,11 @@ md"""
 - Here, the loop is executed every time the condition is true.
 - The syntax follows the same fashion as the previous one.
 - We begin with the keyword `while`, followed by the statement to evaluated as either `true`.
-- Like previously, you must end with the `end` keyword.
+- As before, you must end with the `end` keyword.
 """
 
 # ╔═╡ 0a8e4dec-f313-49e6-9998-9690ae07b3e1
-md"""
-#
-"""
+vspace
 
 # ╔═╡ 6d951c8d-22f5-4d6d-b4e8-13bf62b28bea
 md"""
@@ -530,9 +536,7 @@ begin
 end
 
 # ╔═╡ 5f191192-bc5f-41e8-845c-beba89ee5841
-md"""
-#
-"""
+vspace
 
 # ╔═╡ cddc45e1-7547-4d34-bc12-b08a5320a62c
 # ╠═╡ show_logs = false
@@ -549,7 +553,7 @@ begin
 	
 	#Define html elements
 	nbsp = html"&nbsp" #non-breaking space
-	vspace = html"""<div style="margin-bottom:2cm;"></div>"""
+	vspace = html"""<div style="margin-bottom:1cm;"></div>"""
 	br = html"<br>"
 
 	#Sets the height of displayed tables
@@ -633,40 +637,43 @@ PlutoUI = "~0.7.49"
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.10.0"
+julia_version = "1.11.2"
 manifest_format = "2.0"
-project_hash = "6b6c3dd8246a30b04854d2ce30c3f3718dd6ec8c"
+project_hash = "175814f69ce3389834f82748cefa8e3e8988970e"
 
 [[deps.AbstractPlutoDingetjes]]
 deps = ["Pkg"]
-git-tree-sha1 = "793501dcd3fa7ce8d375a2c878dca2296232686e"
+git-tree-sha1 = "6e1d2a35f2f90a4bc7c2ed98079b2ba09c35b83a"
 uuid = "6e696c72-6542-2067-7265-42206c756150"
-version = "1.2.2"
+version = "1.3.2"
 
 [[deps.ArgTools]]
 uuid = "0dad84c5-d112-42e6-8d28-ef12dabb789f"
-version = "1.1.1"
+version = "1.1.2"
 
 [[deps.Artifacts]]
 uuid = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
+version = "1.11.0"
 
 [[deps.Base64]]
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
+version = "1.11.0"
 
 [[deps.ColorTypes]]
 deps = ["FixedPointNumbers", "Random"]
-git-tree-sha1 = "eb7f0f8307f71fac7c606984ea5fb2817275d6e4"
+git-tree-sha1 = "b10d0b65641d57b8b4d5e234446582de5047050d"
 uuid = "3da002f7-5984-5a60-b8a6-cbb66c0b333f"
-version = "0.11.4"
+version = "0.11.5"
 
 [[deps.CompilerSupportLibraries_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "e66e0078-7015-5450-92f7-15fbd957f2ae"
-version = "1.0.5+1"
+version = "1.1.1+0"
 
 [[deps.Dates]]
 deps = ["Printf"]
 uuid = "ade2ca70-3891-5945-98fb-dc099432e06a"
+version = "1.11.0"
 
 [[deps.Downloads]]
 deps = ["ArgTools", "FileWatching", "LibCURL", "NetworkOptions"]
@@ -675,18 +682,19 @@ version = "1.6.0"
 
 [[deps.FileWatching]]
 uuid = "7b1f6079-737a-58dc-b8bc-7a2ca5c1b5ee"
+version = "1.11.0"
 
 [[deps.FixedPointNumbers]]
 deps = ["Statistics"]
-git-tree-sha1 = "335bfdceacc84c5cdf16aadc768aa5ddfc5383cc"
+git-tree-sha1 = "05882d6995ae5c12bb5f36dd2ed3f61c98cbb172"
 uuid = "53c48c17-4a7d-5ca2-90c5-79b7896eea93"
-version = "0.8.4"
+version = "0.8.5"
 
 [[deps.Hyperscript]]
 deps = ["Test"]
-git-tree-sha1 = "8d511d5b81240fc8e6802386302675bdf47737b9"
+git-tree-sha1 = "179267cfa5e712760cd43dcae385d7ea90cc25a4"
 uuid = "47d2ed2b-36de-50cf-bf87-49c2cf4b8b91"
-version = "0.0.4"
+version = "0.0.5"
 
 [[deps.HypertextLiteral]]
 deps = ["Tricks"]
@@ -696,13 +704,14 @@ version = "0.9.5"
 
 [[deps.IOCapture]]
 deps = ["Logging", "Random"]
-git-tree-sha1 = "d75853a0bdbfb1ac815478bacd89cd27b550ace6"
+git-tree-sha1 = "b6d6bfdd7ce25b0f9b2f6b3dd56b2673a66c8770"
 uuid = "b5f81e59-6552-4d32-b1f0-c071b021bf89"
-version = "0.2.3"
+version = "0.2.5"
 
 [[deps.InteractiveUtils]]
 deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
+version = "1.11.0"
 
 [[deps.JSON]]
 deps = ["Dates", "Mmap", "Parsers", "Unicode"]
@@ -723,16 +732,17 @@ version = "0.6.4"
 [[deps.LibCURL_jll]]
 deps = ["Artifacts", "LibSSH2_jll", "Libdl", "MbedTLS_jll", "Zlib_jll", "nghttp2_jll"]
 uuid = "deac9b47-8bc7-5906-a0fe-35ac56dc84c0"
-version = "8.4.0+0"
+version = "8.6.0+0"
 
 [[deps.LibGit2]]
 deps = ["Base64", "LibGit2_jll", "NetworkOptions", "Printf", "SHA"]
 uuid = "76f85450-5226-5b5a-8eaa-529ad045b433"
+version = "1.11.0"
 
 [[deps.LibGit2_jll]]
 deps = ["Artifacts", "LibSSH2_jll", "Libdl", "MbedTLS_jll"]
 uuid = "e37daf67-58a4-590a-8e99-b0245dd2ffc5"
-version = "1.6.4+0"
+version = "1.7.2+0"
 
 [[deps.LibSSH2_jll]]
 deps = ["Artifacts", "Libdl", "MbedTLS_jll"]
@@ -741,13 +751,16 @@ version = "1.11.0+1"
 
 [[deps.Libdl]]
 uuid = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+version = "1.11.0"
 
 [[deps.LinearAlgebra]]
 deps = ["Libdl", "OpenBLAS_jll", "libblastrampoline_jll"]
 uuid = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+version = "1.11.0"
 
 [[deps.Logging]]
 uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
+version = "1.11.0"
 
 [[deps.MIMEs]]
 git-tree-sha1 = "65f28ad4b594aebe22157d6fac869786a255b7eb"
@@ -757,18 +770,20 @@ version = "0.1.4"
 [[deps.Markdown]]
 deps = ["Base64"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
+version = "1.11.0"
 
 [[deps.MbedTLS_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "c8ffd9c3-330d-5841-b78e-0817d7145fa1"
-version = "2.28.2+1"
+version = "2.28.6+0"
 
 [[deps.Mmap]]
 uuid = "a63ad114-7e13-5084-954f-fe012c677804"
+version = "1.11.0"
 
 [[deps.MozillaCACerts_jll]]
 uuid = "14a3606d-f60d-562e-9121-12d972cd8159"
-version = "2023.1.10"
+version = "2023.12.12"
 
 [[deps.NetworkOptions]]
 uuid = "ca575930-c2e3-43a9-ace4-1e988b2c1908"
@@ -777,48 +792,52 @@ version = "1.2.0"
 [[deps.OpenBLAS_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Libdl"]
 uuid = "4536629a-c528-5b80-bd46-f80d51c5b363"
-version = "0.3.23+2"
+version = "0.3.27+1"
 
 [[deps.Parsers]]
 deps = ["Dates", "PrecompileTools", "UUIDs"]
-git-tree-sha1 = "a935806434c9d4c506ba941871b327b96d41f2bf"
+git-tree-sha1 = "8489905bcdbcfac64d1daa51ca07c0d8f0283821"
 uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
-version = "2.8.0"
+version = "2.8.1"
 
 [[deps.Pkg]]
-deps = ["Artifacts", "Dates", "Downloads", "FileWatching", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "REPL", "Random", "SHA", "Serialization", "TOML", "Tar", "UUIDs", "p7zip_jll"]
+deps = ["Artifacts", "Dates", "Downloads", "FileWatching", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "Random", "SHA", "TOML", "Tar", "UUIDs", "p7zip_jll"]
 uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
-version = "1.10.0"
+version = "1.11.0"
+
+    [deps.Pkg.extensions]
+    REPLExt = "REPL"
+
+    [deps.Pkg.weakdeps]
+    REPL = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
 
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
-git-tree-sha1 = "bd7c69c7f7173097e7b5e1be07cee2b8b7447f51"
+git-tree-sha1 = "eba4810d5e6a01f612b948c9fa94f905b49087b0"
 uuid = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
-version = "0.7.54"
+version = "0.7.60"
 
 [[deps.PrecompileTools]]
 deps = ["Preferences"]
-git-tree-sha1 = "03b4c25b43cb84cee5c90aa9b5ea0a78fd848d2f"
+git-tree-sha1 = "5aa36f7049a63a1528fe8f7c3f2113413ffd4e1f"
 uuid = "aea7be01-6a6a-4083-8856-8a6e6704d82a"
-version = "1.2.0"
+version = "1.2.1"
 
 [[deps.Preferences]]
 deps = ["TOML"]
-git-tree-sha1 = "00805cd429dcb4870060ff49ef443486c262e38e"
+git-tree-sha1 = "9306f6085165d270f7e3db02af26a400d580f5c6"
 uuid = "21216c6a-2e73-6563-6e65-726566657250"
-version = "1.4.1"
+version = "1.4.3"
 
 [[deps.Printf]]
 deps = ["Unicode"]
 uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
-
-[[deps.REPL]]
-deps = ["InteractiveUtils", "Markdown", "Sockets", "Unicode"]
-uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
+version = "1.11.0"
 
 [[deps.Random]]
 deps = ["SHA"]
 uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+version = "1.11.0"
 
 [[deps.Reexport]]
 git-tree-sha1 = "45e428421666073eab6f2da5c9d310d99bb12f9b"
@@ -831,24 +850,19 @@ version = "0.7.0"
 
 [[deps.Serialization]]
 uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
-
-[[deps.Sockets]]
-uuid = "6462fe0b-24de-5631-8697-dd941f90decc"
-
-[[deps.SparseArrays]]
-deps = ["Libdl", "LinearAlgebra", "Random", "Serialization", "SuiteSparse_jll"]
-uuid = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
-version = "1.10.0"
+version = "1.11.0"
 
 [[deps.Statistics]]
-deps = ["LinearAlgebra", "SparseArrays"]
+deps = ["LinearAlgebra"]
+git-tree-sha1 = "ae3bb1eb3bba077cd276bc5cfc337cc65c3075c0"
 uuid = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
-version = "1.10.0"
+version = "1.11.1"
 
-[[deps.SuiteSparse_jll]]
-deps = ["Artifacts", "Libdl", "libblastrampoline_jll"]
-uuid = "bea87d4a-7f5b-5778-9afe-8cc45184846c"
-version = "7.2.1+1"
+    [deps.Statistics.extensions]
+    SparseArraysExt = ["SparseArrays"]
+
+    [deps.Statistics.weakdeps]
+    SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 
 [[deps.TOML]]
 deps = ["Dates"]
@@ -863,11 +877,12 @@ version = "1.10.0"
 [[deps.Test]]
 deps = ["InteractiveUtils", "Logging", "Random", "Serialization"]
 uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+version = "1.11.0"
 
 [[deps.Tricks]]
-git-tree-sha1 = "eae1bb484cd63b36999ee58be2de6c178105112f"
+git-tree-sha1 = "7822b97e99a1672bfb1b49b668a6d46d58d8cbcb"
 uuid = "410a4b4d-49e4-4fbc-ab6d-cb71b17b3775"
-version = "0.1.8"
+version = "0.1.9"
 
 [[deps.URIs]]
 git-tree-sha1 = "67db6cc7b3821e19ebe75791a9dd19c9b1188f2b"
@@ -877,9 +892,11 @@ version = "1.5.1"
 [[deps.UUIDs]]
 deps = ["Random", "SHA"]
 uuid = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
+version = "1.11.0"
 
 [[deps.Unicode]]
 uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
+version = "1.11.0"
 
 [[deps.Zlib_jll]]
 deps = ["Libdl"]
@@ -889,12 +906,12 @@ version = "1.2.13+1"
 [[deps.libblastrampoline_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "8e850b90-86db-534c-a0d3-1478176c7d93"
-version = "5.8.0+1"
+version = "5.11.0+0"
 
 [[deps.nghttp2_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "8e850ede-7688-5339-a07c-302acd2aaf8d"
-version = "1.52.0+1"
+version = "1.59.0+0"
 
 [[deps.p7zip_jll]]
 deps = ["Artifacts", "Libdl"]
@@ -919,6 +936,7 @@ version = "17.4.0+2"
 # ╟─8e7f76a8-aef0-405f-b7e1-50ca7d98d6a1
 # ╟─13109b52-c7b4-4260-9607-9ab2793efef7
 # ╠═9bf34305-6dec-46e2-95b4-c7b5d99a61e4
+# ╟─f73335a8-d848-4ee1-a6ce-c566a78faa5b
 # ╟─26961c2c-7675-4c4c-aa1f-c148ef6a505c
 # ╠═772624fc-0952-48f7-8d8f-f82231f39360
 # ╠═2b6a6c20-3533-48c2-86c1-4d374c8be563
@@ -931,6 +949,7 @@ version = "17.4.0+2"
 # ╟─33f27100-64c9-47ef-b60c-62beba7af90c
 # ╟─cb046dfb-4007-4216-9743-9456e8e4d250
 # ╠═7ed413c6-c0e5-4b85-b4dc-08666c418b28
+# ╟─a467b6ec-5d33-443b-8583-906f8af37e48
 # ╟─25c65694-fee6-4a51-bef6-6e8226bf97a0
 # ╟─1d0c2cab-9c8f-44ea-8a1a-df5a80cb4d63
 # ╟─2d20bd5f-e43e-4ff6-9080-0166046c8223
@@ -949,6 +968,7 @@ version = "17.4.0+2"
 # ╠═aaa9341e-4a13-413e-a6ae-7217e6b5d021
 # ╟─e9b473dd-dda5-44df-958b-3eafe9d65cd1
 # ╠═17febe2d-ac87-496b-9ebe-25da47922967
+# ╟─450feddc-493c-48b2-894b-0fd9d4b97d21
 # ╟─be960870-e0ff-49a3-b14b-dd7716edf25b
 # ╟─6f182c16-b8f5-4835-9ce3-b21af62c5d5c
 # ╟─e060e675-412f-4405-9bd1-eca0501a1b48
@@ -969,6 +989,16 @@ version = "17.4.0+2"
 # ╟─c756ea1a-af25-4152-85f2-7e75b9f18d5b
 # ╠═3b659642-6f7f-43ba-9f3d-99561a36e2c0
 # ╠═ce6c05f7-a5a4-4380-bf19-b5e801df1c04
+# ╟─40d3452c-bec1-4c54-9e69-2417367de127
+# ╟─26c5b913-8260-45ea-a839-bf038d624fcb
+# ╟─11759565-7562-4258-8fe8-deadbadc8bb8
+# ╠═4834b5da-9f23-48e2-82a7-0cedf261101e
+# ╟─cdd4ddae-6ef7-4a94-a7c8-4ed622837ba8
+# ╠═6b22f5c0-e118-4a43-9b96-519dc5e566f6
+# ╟─66ed2a3c-f366-4db5-9c5a-5939a2476e82
+# ╠═806f3420-14ef-4b02-9cac-6bfc4e670286
+# ╠═4a9415a5-f72d-400d-94d7-2056fe7a5118
+# ╟─51bc3d85-355b-4782-a316-130fcbef9149
 # ╟─28e15a84-5b59-4732-ae2b-97398b75b987
 # ╟─2d31ec89-d66f-441a-b3b5-9e6baaa77f8a
 # ╟─33e4df84-304e-4047-a8bc-c9f97bc8ab38
@@ -980,11 +1010,13 @@ version = "17.4.0+2"
 # ╟─5766ea83-6a34-4968-88f2-387337e06499
 # ╠═69addfa3-5a79-45fe-a05e-ccfd5e877722
 # ╠═ce2dbd2a-a5b8-4b9f-9ea6-3932029f4069
+# ╟─b786af85-c8cf-47fe-a546-84031670a5a0
 # ╟─01cd64f7-e024-4def-a8b7-0a03f4276033
 # ╟─7b3bd5e1-7460-4c71-981b-c13176cf8b3d
 # ╟─31338853-5fce-41d8-8366-a0cd5cd8e1ac
 # ╟─8134e48e-0f43-44f4-93ef-91cbef4e7442
 # ╠═cb389ce1-19b2-447e-af81-27b040b94ee5
+# ╟─503e2b52-8dfa-4bad-a504-82fe00612a58
 # ╟─9d85e2dd-e003-4b89-92c4-7f863583770f
 # ╟─a9694818-e967-431c-858c-a5e30f56962b
 # ╟─0a8e4dec-f313-49e6-9998-9690ae07b3e1
