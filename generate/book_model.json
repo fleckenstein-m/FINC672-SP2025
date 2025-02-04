@@ -7,6 +7,12 @@
                 "notebook_path": "notebooks/Lect01/Lect01_noSol.jl",
                 "video_id": "",
                 "preview_image_url": ""
+            },
+             {
+                "name": "Julia Data Structures I",
+                "notebook_path": "notebooks/Lect02/Lect02_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
             }
         ]
     },
