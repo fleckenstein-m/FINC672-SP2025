@@ -164,10 +164,14 @@ md"""
 """
 
 # ╔═╡ ade0df3a-f591-4c55-8032-c83005daa18a
-
+let
+	name = "Julia"
+end
 
 # ╔═╡ 807e79b5-4c2c-446d-8018-8b1d43336255
-
+let
+	age = 9
+end
 
 # ╔═╡ 8e7f76a8-aef0-405f-b7e1-50ca7d98d6a1
 vspace
@@ -188,7 +192,10 @@ md"""
 """
 
 # ╔═╡ 9bf34305-6dec-46e2-95b4-c7b5d99a61e4
-
+let
+	age = 9
+	age = 10
+end
 
 # ╔═╡ f73335a8-d848-4ee1-a6ce-c566a78faa5b
 vspace
@@ -208,10 +215,17 @@ md"""
 """
 
 # ╔═╡ 772624fc-0952-48f7-8d8f-f82231f39360
-
+begin
+ variable_01 = 10
+end
 
 # ╔═╡ 2b6a6c20-3533-48c2-86c1-4d374c8be563
-
+# ╠═╡ disabled = true
+#=╠═╡
+begin 
+ variable_01 =  20
+end
+  ╠═╡ =#
 
 # ╔═╡ aef0ecc7-ad76-4888-ad41-e54123d16d07
 vspace
@@ -223,7 +237,8 @@ md"""
 
 # ╔═╡ 40deef2b-c458-43ba-acad-7c02f5ae5787
 let
-
+	age = 10
+	age * 3
 end
 
 # ╔═╡ 91a0bd38-0784-4123-876b-85d7361eb579
@@ -236,7 +251,9 @@ md"""
 
 # ╔═╡ 5238a439-f5ee-4427-9533-b36965254a6d
 let
-
+	age = 10
+	age = age + 7
+	age
 end
 
 # ╔═╡ 33f27100-64c9-47ef-b60c-62beba7af90c
@@ -249,7 +266,8 @@ md"""
 
 # ╔═╡ 7ed413c6-c0e5-4b85-b4dc-08666c418b28
 let
-	
+	age = 10
+	typeof(age)
 end
 
 # ╔═╡ a467b6ec-5d33-443b-8583-906f8af37e48
@@ -278,13 +296,13 @@ md"""
 """
 
 # ╔═╡ 7d8602c2-5a98-472d-a660-15f5f4f60a16
-
+!true
 
 # ╔═╡ 82355982-8aeb-44e7-921f-7f99e4667c03
-
+(false && true) || (!false)
 
 # ╔═╡ 46fe46fb-a64d-4cb9-9556-9bdea3381a21
-
+(6 isa Int64) && (6 isa Real)
 
 # ╔═╡ c41f8840-5081-421e-9a2e-1b145f00b2ba
 vspace
@@ -312,10 +330,10 @@ md"""
 """
 
 # ╔═╡ 187e1fd0-b8ba-47d6-9857-5d36c195c2c9
-
+1 == 1
 
 # ╔═╡ c960a390-9194-48bc-b8c3-b38503d2fa76
-
+1 >= 10
 
 # ╔═╡ 29cf39dc-62c5-4a57-add9-32c96c5efb95
 vspace
@@ -326,7 +344,7 @@ md"""
 """
 
 # ╔═╡ aaa9341e-4a13-413e-a6ae-7217e6b5d021
-
+1 == 1.0
 
 # ╔═╡ e9b473dd-dda5-44df-958b-3eafe9d65cd1
 md"""
@@ -334,7 +352,7 @@ md"""
 """
 
 # ╔═╡ 17febe2d-ac87-496b-9ebe-25da47922967
-
+(1 != 10) || (3.14 <= 2.71)
 
 # ╔═╡ 450feddc-493c-48b2-894b-0fd9d4b97d21
 vspace
@@ -379,7 +397,9 @@ numbers together:
 """
 
 # ╔═╡ 2cb1933c-50ac-4fed-844b-52aee0f45b71
-
+function add_numbers(x, y)
+	return x + y
+end
 
 # ╔═╡ bbd1e1c4-11f8-4e9e-9b53-d5111fe83342
 vspace
@@ -390,7 +410,7 @@ md"""
 """
 
 # ╔═╡ 4329e88e-ecbe-4336-b453-fc657d4a1621
-
+add_numbers(17, 29)
 
 # ╔═╡ b37b6554-e1fd-4742-a80e-1829b5abd015
 md"""
@@ -398,7 +418,7 @@ And it works also with floats
 """
 
 # ╔═╡ a0bd7251-d107-4546-bc55-36157dc2f526
-
+add_numbers(3.14, 2.72)
 
 # ╔═╡ 9a2f2002-9bc6-4386-a579-b3903f8b61e1
 vspace
@@ -410,7 +430,13 @@ md"""
 """
 
 # ╔═╡ b09bcf25-f482-4599-91ce-37781530d8f6
-
+function add_multiply(x, y)
+	
+	addition = x + y
+	multiplication = x * y
+	
+	return addition, multiplication
+end
 
 # ╔═╡ 5941aeae-096f-477d-9f8d-99d0de53b527
 vspace
@@ -427,12 +453,16 @@ vspace
 
 # ╔═╡ 3b659642-6f7f-43ba-9f3d-99561a36e2c0
 let
-
+	return_1, return_2 = add_multiply(1, 2)
+	
+	return_2
 end
 
 # ╔═╡ ce6c05f7-a5a4-4380-bf19-b5e801df1c04
 let
+	all_returns = add_multiply(1, 2)
 
+	last(all_returns)
 end
 
 # ╔═╡ 40d3452c-bec1-4c54-9e69-2417367de127
@@ -510,7 +540,6 @@ md"""
 
 # ╔═╡ b5d6e2ae-5ea1-4ed6-9a9e-8bf9c108e46c
 let
-
 	
 end
 
@@ -583,6 +612,7 @@ md"""
 
 # ╔═╡ f7da342c-f5ea-4a8c-b2ed-a7ebafb0ef6d
 let
+
 
 end
 
