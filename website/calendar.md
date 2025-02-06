@@ -2,7 +2,8 @@
 
 | Lecture | Topic                              | Date          |  Notebooks                                                                             | Reading              |
 |:-------:|:----------------------------------:|:-------------:|:--------------------------------------------------------------------------------------:|:--------------------:|
-| 1       | Variables, Functions, Control-Flow | Feb  7, 2025  | [Variables, Function, Control-Flow](/assets/notebooksolutions/Lect01/Lect01.html)      |                      |
+| 1       | Variables, Functions, Control-Flow | Feb  4, 2024  | [Variables, Function, Control-Flow](/assets/notebooksolutions/Lect01/Lect01.html)      |                      |
+| 2       | Julia Data Structures I            | Feb  6, 2024  | [Julia Data Structures I](/assets/notebooksolutions/Lect02/Lect02.html)                |                      |
 
 
 ## Assignments
