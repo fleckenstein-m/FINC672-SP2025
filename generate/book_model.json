@@ -13,6 +13,18 @@
                 "notebook_path": "notebooks/Lect02/Lect02_noSol.jl",
                 "video_id": "",
                 "preview_image_url": ""
+            },
+            {
+                "name": "Julia Data Structures II",
+                "notebook_path": "notebooks/Lect03/Lect03_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Julia Data Structures III",
+                "notebook_path": "notebooks/Lect04/Lect04_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
             }
         ]
     },
