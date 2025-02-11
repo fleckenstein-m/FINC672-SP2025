@@ -25,6 +25,30 @@
                 "notebook_path": "notebooks/Lect04/Lect04_noSol.jl",
                 "video_id": "",
                 "preview_image_url": ""
+            },
+            {
+                "name": "Dates and Missing Values",
+                "notebook_path": "notebooks/Lect05/Lect05_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Tabular Data and File I/O",
+                "notebook_path": "notebooks/Lect06/Lect06_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Data Visualization",
+                "notebook_path": "notebooks/Lect07/Lect07_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Data Analysis Techniques",
+                "notebook_path": "notebooks/Lect08/Lect08_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
             }
         ]
     },
