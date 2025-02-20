@@ -8,6 +8,7 @@
 | 4       | Julia Data Structures III          | Feb  13, 2025  | [Julia Data Structures II](/assets/notebooksolutions/Lect04/Lect04.html)              |                      |
 | 5       | Julia Dates and Missing Values     | Feb  13, 2025  | [Julia Dates and Missing Values](/assets/notebooksolutions/Lect05/Lect05.html)        |                      |
 | 6       | Tabular Data and File I/O          | Feb  18, 2025  | [Tabular Data and File I/O](/assets/notebooksolutions/Lect06/Lect06.html)        |                      |
+| 7       | Tabular Data and File I/O          | Feb  20, 2025  | [Tabular Data and File I/O](/assets/notebooksolutions/Lect06/Lect06.html)        |                      |
 
 ## Assignments
 
