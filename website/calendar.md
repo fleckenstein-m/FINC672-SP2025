@@ -10,7 +10,7 @@
 | 6       | Tabular Data and File I/O          | Feb  18, 2025  | [Tabular Data and File I/O](/assets/notebooksolutions/Lect06/Lect06.html)        |                      |
 | 7       | Tabular Data and File I/O          | Feb  20, 2025  | [Tabular Data and File I/O](/assets/notebooksolutions/Lect06/Lect06.html)        |                      |
 | 8       | Data Visualization                 | Feb  25, 2025  | [Data Visualization](/assets/notebooksolutions/Lect07/Lect07.html)        |                      |
-| 9       | Empirical Data Analysis using DataFrames  | Feb  27, 2025  | [Empirical Data Analysis using DataFrames](/assets/notebooksolutions/Lect08/Lect08.html)        |                      |
+| 9       | Empirical Data Analysis using DataFrames  | Mar  4, 2025  | [Empirical Data Analysis using DataFrames](/assets/notebooksolutions/Lect08/Lect08.html)        |                      |
 
 ## Assignments
 
