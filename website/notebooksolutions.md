@@ -9,3 +9,4 @@
 | 5       | Julia Dates and Missing Values     | Feb  15, 2025  | [Julia Dates and Missing Values](/assets/notebooksolutions/Lect05/Lect05.html)        |                      |
 | 6       | Tabular Data and File I/O          | Feb  20, 2024  | [Tabular Data and File I/O](/assets/notebooksolutions/Lect06/Lect06.html)        |                      |
 | 7       | Data Visualization                 | Feb  22, 2024  | [Data Visualization](/assets/notebooksolutions/Lect07/Lect07.html)        |                      |
+| 8       | Empirical Data Analysis using DataFrames  | Mar  04, 2025  | [Empirical Data Analysis using DataFrames](/assets/notebooksolutions/Lect08/Lect08.html)        |                      |
