@@ -171,15 +171,11 @@ md"""
 
 # ╔═╡ 694990b6-36db-460f-bfd5-8c5db46c4eed
 # ╠═╡ show_logs = false
-begin
-	
-end
+
 
 # ╔═╡ ab8af2dc-66e9-420b-9910-f96f4f029d43
 # ╠═╡ show_logs = false
-begin
 
-end
 
 # ╔═╡ 1a37fc9e-e58c-453c-b68d-9adccbed44fe
 md"""
@@ -187,14 +183,10 @@ md"""
 """
 
 # ╔═╡ 0afd4964-3b48-4696-b6a2-8aef8506e3c5
-with_terminal() do
-		println("Option prices at S=$S and K=$K: ")
-end
+
 
 # ╔═╡ 41053b95-3f0e-48eb-a76e-eb4322b2fe57
-begin
 
-end
 
 # ╔═╡ 86fe929c-9095-49c4-b6d3-eb4bbae7eb36
 vspace
@@ -206,9 +198,7 @@ md"""
 """
 
 # ╔═╡ 61df8eb6-da0b-42b2-89f8-9afc4641dd28
-let
 
-end
 
 # ╔═╡ abcf2dfd-6732-49d8-9404-f0dc0d4b4edd
 vspace
@@ -220,9 +210,7 @@ md"""
 """
 
 # ╔═╡ f052a5e1-ba09-42c6-b4e6-7be65cf18900
-let
 
-end
 
 # ╔═╡ 5adf7659-c608-49b0-9db8-7df970a73cbd
 vspace
@@ -255,15 +243,10 @@ Generate a table which only has the call options with the smallest strike price 
 """
 
 # ╔═╡ 6baad067-2357-4337-b77d-1938b34fe8b2
-begin
 
-end
 
 # ╔═╡ 5d4d511f-4528-4a0f-ae0e-374763fd2ab4
-#Solution Alternative 2
-begin
 
-end
 
 # ╔═╡ db248494-ac03-4992-94b2-15a1fb349de0
 vspace
@@ -303,9 +286,7 @@ Note: You can assume that the strike prices are ordered in ascending order. In o
 """
 
 # ╔═╡ 1d65c803-b46a-456a-b79e-26ada91a5ab7
-begin
 
-end
 
 # ╔═╡ bafa86e5-b340-4b99-b3d6-c31908824eaa
 # ╠═╡ show_logs = false
@@ -1940,7 +1921,7 @@ version = "1.4.1+2"
 # ╠═694990b6-36db-460f-bfd5-8c5db46c4eed
 # ╠═ab8af2dc-66e9-420b-9910-f96f4f029d43
 # ╟─1a37fc9e-e58c-453c-b68d-9adccbed44fe
-# ╟─0afd4964-3b48-4696-b6a2-8aef8506e3c5
+# ╠═0afd4964-3b48-4696-b6a2-8aef8506e3c5
 # ╠═41053b95-3f0e-48eb-a76e-eb4322b2fe57
 # ╟─86fe929c-9095-49c4-b6d3-eb4bbae7eb36
 # ╟─350ef27b-5dfc-4ac7-a6f2-bc37067d7f7c
