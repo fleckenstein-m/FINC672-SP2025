@@ -60,6 +60,12 @@
                 "notebook_path": "notebooks/Lect09/Lect09_noSol.jl",
                 "video_id": "",
                 "preview_image_url": ""
+            },
+            {
+                "name": "Interactive Data Visualization",
+                "notebook_path": "notebooks/Lect10/Lect10_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
             }
         ]
     },    
