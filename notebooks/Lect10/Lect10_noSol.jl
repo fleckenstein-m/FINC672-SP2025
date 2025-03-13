@@ -8,7 +8,7 @@ using InteractiveUtils
 # ╠═╡ show_logs = false
 begin
 
-	using Pkg
+	#using Pkg
 	#Pkg.upgrade_manifest()
 	#Pkg.update()
 	#Pkg.resolve()
@@ -342,7 +342,6 @@ Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
 HypertextLiteral = "ac1192a8-f4b3-4bfe-ba22-af5b92cd3ab2"
 LaTeXStrings = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
 Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
-Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 PlutoPlotly = "8e989ff0-3d88-8e9f-f020-2b208a939ff0"
 PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
@@ -365,7 +364,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.11.2"
 manifest_format = "2.0"
-project_hash = "ba74ee7ea7bdde2ef4f4516eff8f2d09ed17585f"
+project_hash = "5038352c20551233366288da776c319d398a73c3"
 
 [[deps.AbstractPlutoDingetjes]]
 deps = ["Pkg"]
