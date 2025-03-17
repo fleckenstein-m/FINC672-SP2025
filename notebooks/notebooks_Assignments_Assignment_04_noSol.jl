@@ -106,7 +106,7 @@ begin
 	<p style="padding-bottom:1cm"> </p>
 	<div align=center style="font-size:25px; font-family:family:Georgia"> FINC-672: Workshop in Finance - Empirical Methods </div>
 	<p style="padding-bottom:1cm"> </p>
-	<p align=center style="font-size:25px; font-family:family:Georgia"> <b> Interactive Data Visualization </b> <p>
+	<p align=center style="font-size:25px; font-family:family:Georgia"> <b> Assignment 04 </b> <p>
 	<p style="padding-bottom:1cm"> </p>
 	<p align=center style="font-size:25px; font-family:family:Georgia"> Spring 2025 <p>
 	<p style="padding-bottom:0.5cm"> </p>
@@ -121,24 +121,8 @@ end
 # ╔═╡ 133a4585-23ab-4c55-a97b-f841cbe672b6
 vspace
 
-# ╔═╡ 4f637ab6-b490-4651-8c2d-85b148694a9a
-begin
-html"""
-<fieldset>      
-<legend>Goals for today</legend>      
-<br>
-  <input type="checkbox" value="">Interactive components in Pluto. <br>      
-  <input type="checkbox" value="">Interactive Data Visualization with PlotlyJS. <br>     <br> 
-"""
-end
-
 # ╔═╡ a6dfa529-f1e1-46a1-84bc-43c68e931dde
 vspace
-
-# ╔═╡ dc060870-4a03-4fa8-8d27-c4bde0ab0a9c
-md"""
-- We begin by loading the `PlutoPlotly.jl` and `YFinance.jl` packages.
-"""
 
 # ╔═╡ 2ff2be70-af14-11ee-3d58-9b67f9c734c7
 using YFinance, DataFrames, Statistics, Dates
@@ -146,21 +130,46 @@ using YFinance, DataFrames, Statistics, Dates
 # ╔═╡ 2acfb967-e2ad-4772-a81d-d0cc98dd7355
 vspace
 
-# ╔═╡ 20ceda13-98fb-41c8-a853-7a55de45e65e
+# ╔═╡ 0e4ca764-6c70-47e8-b4f3-1de3ce177a04
 md"""
-- Next, we define interactive elements, allowing us to select a stock ticker and start/end dates for the stock price data.
+## Interactive Stock Price Visualization
+"""
+
+# ╔═╡ b47cc02d-6baf-4cf9-898c-7d8cf1383261
+md"""
+1. Load the PlotlyJS plotting library by loading the `PlutoPlotly` package.
 """
 
 # ╔═╡ f2cb8ae6-6bcf-4d17-bbd7-12b07565fd52
 
 
+# ╔═╡ 755292f3-d472-4b30-bf81-a80e2d830e7e
+vspace
+
+# ╔═╡ 20ceda13-98fb-41c8-a853-7a55de45e65e
+md"""
+2. Pick three pairs of stocks (e.g., AAPL and MSFT, etc.). Define a dropdown selector allowing the user to select one of the three stock pairs.
+"""
+
 # ╔═╡ 904559d5-5a0c-4c6c-9175-23aae545e55f
 
 
-# ╔═╡ 8a07bf20-fdc8-4867-a781-3b19f1ce6436
+# ╔═╡ 1f08921c-ff00-47f2-8aba-c887e6d7a1fa
+vspace
+
+# ╔═╡ 141a0d20-2ba3-462f-b02c-f1d0e8f8873d
+md"""
+3. Define two dropdown selectors, one for the start year and one for the end year. Let the start year and end year values ranges from 2000 to 2024. Set the default values for the start and end years to 2010 and 2024, respectively. The start and end years will be used in the stock price charts as the beginning and end of the time series in the line graphs. Using the input from the dropdown selectors, define two dates for the start dates and end dates, respectively. Set the dates to January 1st of the start and end years, respectively.
+
+"""
+
+# ╔═╡ fc23383f-808f-479d-a0bc-8e8a896063f9
 
 
-# ╔═╡ bf514c3e-1f3b-460e-9f43-e924e6eb8280
+# ╔═╡ 62197d1b-91a8-4145-9221-cdec831fe335
+
+
+# ╔═╡ 90e88806-a860-4b3f-acdb-861c841e9879
 
 
 # ╔═╡ 593af85e-e1a9-4ab1-bc70-31188111b5ab
@@ -168,7 +177,7 @@ vspace
 
 # ╔═╡ 4ec54437-d86c-43ce-b132-f86baaad61bc
 md"""
-- Let's define a function to collect stock price data from Yahoo Finance.
+4. Define a function to collect stock price data from Yahoo Finance that takes a vector of Strings as input, as well as a start date and an end date as strings. This function should return a DataFrame with a panel of stock price data for the two stocks in the pair the user selected.
 """
 
 # ╔═╡ 6413c68f-84ed-47e8-b62e-e900e83b51e1
@@ -179,102 +188,54 @@ vspace
 
 # ╔═╡ 792ae644-7230-4225-b862-5b8cb94cbb12
 md"""
-- Next, we use the interactive element for the stock ticker and the previous function to collect stock price data from the start to the end date set in the boxes above.
+5. Collect the closing prices for the two stocks in the pair the user select in a DataFrame. The DataFrame should be a panel of daily stock prices for the two stocks in the pair.
 """
 
 # ╔═╡ 0cdc0c2b-4990-448b-be62-e83b01080cf1
+prices = get_symbol_prices(symbols, start_date, end_date)
 
-
-# ╔═╡ d7f05838-c922-44ba-b2cd-29cae6a063c3
+# ╔═╡ 7b2f8906-5d8c-41b9-b174-c53b3188cf97
 vspace
 
-# ╔═╡ 2be5e70a-f766-4d98-b2ac-5647a43cbe19
+# ╔═╡ 8e3de84a-f354-4885-a79f-9a7d024a2ff8
 md"""
-- Next, we set up a Layout object for plotting stock prices.
-"""
-
-# ╔═╡ 6a41b8b1-f492-43f0-9a1a-74da21b1a03f
-# ╠═╡ skip_as_script = true
-#=╠═╡
-# function plot_layout(title="") 
-    
-# 	l =  Layout(
-#         title_text = "<b>$(title)</b>",
-#         paper_bgcolor = ,
-#         plot_bgcolor = ,
-# 		  width=,  height=,
-#         yaxis = attr(
-#             gridcolor=,
-#             griddash=,
-#             zerolinecolor=,
-#         xaxis=attr(
-#             gridcolor=,
-#             griddash=,
-#             zerolinecolor=,
-#             rangeslider_visible=,
-#             rangeselector=attr(
-#                 buttons=[
-#                     attr(),
-#
-#                     ]))) 
-#     return l
-#
-# end;
-  ╠═╡ =#
-
-# ╔═╡ ca4150d7-9fe6-4e61-960c-5eb5c7077008
-vspace
-
-# ╔═╡ 631faf4e-25a0-48bf-9713-d102915ee447
-md"""
-- Next, let's use the layout to plot stock price paths.
-"""
-
-# ╔═╡ 4a43fd49-66a8-48c5-a011-991af53fb969
-
-
-# ╔═╡ ceed3b68-2e2b-430b-8c1b-86deb703a589
-vspace
-
-# ╔═╡ 49360a56-1619-4385-b2d5-13cc5971dfd5
-md"""
-- One commonly-used technique is to use a moving average of past prices to show trends.
+6. Define a function that calculates moving average stock prices for a user-selected window size.
 """
 
 # ╔═╡ ae736349-ef84-4bc5-a448-f1735ce4ef23
 
 
-# ╔═╡ c0ca7327-7c14-4af7-a9df-55839aa4d11e
+# ╔═╡ 19105601-36d7-46dd-9aaa-19127ad2bc12
 vspace
 
-# ╔═╡ 4c098de4-d683-4432-b132-2ffb4a7c6570
+# ╔═╡ 0ee78e44-ac3d-4f97-a7ca-25607b941c15
 md"""
-- Let's add a 20-day moving average to the stock price data.
+7. Call the function from 6. above and add a column with the moving average stock prices for the two stocks in the  pair the user selected to the DataFrame from 5. above. Uses a 30-day moving average.
 """
 
-# ╔═╡ a69f528f-d94a-4519-91dd-a6149c958ba9
+# ╔═╡ e787069d-3eb2-425f-af42-6103c2fcc8cb
 
+
+# ╔═╡ 79a1d60c-d9e7-4b97-91b6-975fbdb8873a
+vspace
+
+# ╔═╡ 2be5e70a-f766-4d98-b2ac-5647a43cbe19
+md"""
+8. Use the PlotlyJS Layout we created in class. Change this layout specification such that the user can select stock prices over the last 3, 6, 9, and 12 months. Keep the option to select the entire time series from the start to the end date.
+"""
+
+# ╔═╡ 6a41b8b1-f492-43f0-9a1a-74da21b1a03f
+# ╠═╡ skip_as_script = true
+#=╠═╡
+
+  ╠═╡ =#
 
 # ╔═╡ c39592ae-974f-4d99-ab8f-c955e1e54897
 vspace
 
-# ╔═╡ e3366414-3335-421e-83b1-e2c7fdbbd368
-vspace
-
-# ╔═╡ 0c53f037-bcf3-4c9c-830d-9341be294639
+# ╔═╡ 05378a7e-562d-44d6-aa11-8c0c2170bf21
 md"""
-- Let's plot the moving average stock price.
-"""
-
-# ╔═╡ 14fcee89-199e-48b4-8a13-ac8ca9931dc0
-
-
-# ╔═╡ e42ab2aa-1242-41f8-882e-b5ba3ed27e57
-vspace
-
-# ╔═╡ 7e0e9f32-cfad-4594-9aa2-b067130aaf63
-md"""
-- Lastly, let's display both the actual and the moving-average stock price.
+9. Plot the stock prices the user selected over the period from the start date to the end date. In the same plot, show the moving averages.
 """
 
 # ╔═╡ 09d3292b-caca-4bff-b7cc-48ede0a0aa9d
@@ -290,29 +251,11 @@ md"""
 
 # ╔═╡ 25db0861-4063-45a5-95f7-be9f28654e8f
 md"""
-- To illustrate other types of plots, let's take a look at ESG ratings.
-- [Guide to ESG Ratings](https://finance.yahoo.com/news/guide-understanding-esg-ratings-151501443.html)
-"""
-
-# ╔═╡ ca897b9a-fd6c-42b0-b27f-e86f146723a0
-md"""
-- In doing this, we learn a new technique, i.e., we learn to "stack" a DataFrame.
-- Stacking a DataFrame refers to reshaping it by pivoting the columns into rows. This operation compresses a DataFrame from a wide format (where data is spread across multiple columns) to a long format (where data is stacked vertically under one index/level).
-- This process is illustrated below.
-"""
-
-# ╔═╡ 9a722701-84f4-4ca6-bf58-738d3af53e55
-LocalResource("stacking.png")
-
-# ╔═╡ 10d5b1ed-4925-4eb9-8355-07732389f9ea
-md"""
-- Let's do this with ESG score data.
+- Compare the ESG scores, as well as the scores in the environmental, governance, and social subcategories of `AAPL` and `XOM`. Use a bar-chart for this analysis. For the bar chart, use the Layout we created in class. Comment on the results.
+  - [Guide to ESG Ratings](https://finance.yahoo.com/news/guide-understanding-esg-ratings-151501443.html)
 """
 
 # ╔═╡ 1f5d1018-3418-46b7-b8c0-5623254c6c5c
-
-
-# ╔═╡ 13848809-3b1e-4240-b5d2-348da4957c83
 
 
 # ╔═╡ 21a68cf1-b5ca-4448-849d-4a2ed232d13b
@@ -320,66 +263,25 @@ vspace
 
 # ╔═╡ 9063bb97-844f-4ab0-8e60-962d5f7c0ada
 md"""
-- Let's define a function to create bar charts.
+- Function to create bar charts.
 """
 
 # ╔═╡ a238d349-b9fc-4c7b-b8f7-8ab89711069c
-# function create_barplot()
-	
 
-#     traces = bar(,
-# 		         x = , 
-# 		         y = ,
-# 		         group=,
-# 		         names=,
-# 		         marker_color=)
-
-#     layout = Layout(barmode=,
-# 		width=,
-#         height=,
-#         legend=attr(
-#             x=,
-#             y=,
-#             yanchor=,
-#             xanchor=,
-#             orientation=),
-#             paper_bgcolor = ,
-#             plot_bgcolor =)
-	
-#     return Plot(traces, layout)
-	
-# end
 
 # ╔═╡ 15a03116-4372-4138-a7b7-d8a63305d111
 vspace
 
 # ╔═╡ f2eea4f2-98d0-43cc-bf3f-bbe836bc4ce9
 md"""
-- Let's use this function to create a bar chart of ESG scores.
+- Use this function to create a bar chart of ESG scores.
 """
 
 # ╔═╡ a72b989b-d8ff-4529-8ee3-46770dc0fd80
 
 
-# ╔═╡ b8646508-525b-49df-b770-2cfa2806c12b
+# ╔═╡ ad2fcdc5-0a0a-40aa-9b7c-4f0e02b41f99
 vspace
-
-# ╔═╡ 0ef68cda-bd96-4619-a1d2-64cf267877d4
-md"""
-# Wrap-Up
-"""
-
-# ╔═╡ 33c2f57f-a9f8-43ef-b8fd-274500dc0d36
-begin
-html"""
-<fieldset>      
-<legend>Goals for today</legend>      
-<br>
-  <input type="checkbox" value="" checked>Interactive components in Pluto. <br>      
-  <input type="checkbox" value="" checked>Interactive Data Visualization with PlotlyJS. <br>     <br> 
-
-"""
-end
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -396,11 +298,10 @@ Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 YFinance = "e4b3b0a2-f9a3-42f3-aabb-32142cceaf77"
 
 [compat]
-DataFrames = "~1.7.0"
+DataFrames = "~1.6.1"
 HypertextLiteral = "~0.9.5"
-LaTeXStrings = "~1.4.0"
+LaTeXStrings = "~1.3.1"
 PlutoUI = "~0.7.58"
-Statistics = "~1.11.1"
 YFinance = "~0.1.4"
 """
 
@@ -410,7 +311,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.11.2"
 manifest_format = "2.0"
-project_hash = "3935859aa6cd3f28daaf358a65878fe03cce7426"
+project_hash = "c4e16c3d688a3b41bb152719929a038b141b9b73"
 
 [[deps.AbstractPlutoDingetjes]]
 deps = ["Pkg"]
@@ -437,9 +338,9 @@ version = "0.1.9"
 
 [[deps.CodecZlib]]
 deps = ["TranscodingStreams", "Zlib_jll"]
-git-tree-sha1 = "bce6804e5e6044c6daab27bb533d1295e4a2e759"
+git-tree-sha1 = "962834c22b66e32aa10f7611c08c8ca4e20749a9"
 uuid = "944b1d66-785c-5afd-91f1-9de20f533193"
-version = "0.7.6"
+version = "0.7.8"
 
 [[deps.ColorTypes]]
 deps = ["FixedPointNumbers", "Random"]
@@ -464,9 +365,9 @@ version = "1.1.1+0"
 
 [[deps.ConcurrentUtilities]]
 deps = ["Serialization", "Sockets"]
-git-tree-sha1 = "f36e5e8fdffcb5646ea5da81495a5a7566005127"
+git-tree-sha1 = "d9d26935a0bcffc87d2613ce14c527c99fc543fd"
 uuid = "f0e56b4a-5159-44fe-b623-3e5288b988bb"
-version = "2.4.3"
+version = "2.5.0"
 
 [[deps.Crayons]]
 git-tree-sha1 = "249fe38abf76d48563e2f4556bebd215aa317e15"
@@ -479,10 +380,10 @@ uuid = "9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a"
 version = "1.16.0"
 
 [[deps.DataFrames]]
-deps = ["Compat", "DataAPI", "DataStructures", "Future", "InlineStrings", "InvertedIndices", "IteratorInterfaceExtensions", "LinearAlgebra", "Markdown", "Missings", "PooledArrays", "PrecompileTools", "PrettyTables", "Printf", "Random", "Reexport", "SentinelArrays", "SortingAlgorithms", "Statistics", "TableTraits", "Tables", "Unicode"]
-git-tree-sha1 = "fb61b4812c49343d7ef0b533ba982c46021938a6"
+deps = ["Compat", "DataAPI", "DataStructures", "Future", "InlineStrings", "InvertedIndices", "IteratorInterfaceExtensions", "LinearAlgebra", "Markdown", "Missings", "PooledArrays", "PrecompileTools", "PrettyTables", "Printf", "REPL", "Random", "Reexport", "SentinelArrays", "SortingAlgorithms", "Statistics", "TableTraits", "Tables", "Unicode"]
+git-tree-sha1 = "04c738083f29f86e62c8afc341f0967d8717bdb8"
 uuid = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
-version = "1.7.0"
+version = "1.6.1"
 
 [[deps.DataStructures]]
 deps = ["Compat", "InteractiveUtils", "OrderedCollections"]
@@ -551,9 +452,9 @@ uuid = "b5f81e59-6552-4d32-b1f0-c071b021bf89"
 version = "0.2.5"
 
 [[deps.InlineStrings]]
-git-tree-sha1 = "45521d31238e87ee9f9732561bfee12d4eebd52d"
+git-tree-sha1 = "6a9fde685a7ac1eb3495f8e812c5a7c3711c2d5e"
 uuid = "842dd82b-1e85-43dc-bf29-5d0ee9dffc48"
-version = "1.4.2"
+version = "1.4.3"
 
     [deps.InlineStrings.extensions]
     ArrowTypesExt = "ArrowTypes"
@@ -603,9 +504,9 @@ version = "1.14.1"
     ArrowTypes = "31f734f8-188a-4ce0-8406-c8a06bd891cd"
 
 [[deps.LaTeXStrings]]
-git-tree-sha1 = "dda21b8cbd6a6c40d9d02a73230f9d70fed6918c"
+git-tree-sha1 = "50901ebc375ed41dbf8058da26f9de442febbbec"
 uuid = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
-version = "1.4.0"
+version = "1.3.1"
 
 [[deps.LibCURL]]
 deps = ["LibCURL_jll", "MozillaCACerts_jll"]
@@ -652,9 +553,9 @@ uuid = "e6f89c97-d47a-5376-807f-9c37f3926c36"
 version = "1.1.0"
 
 [[deps.MIMEs]]
-git-tree-sha1 = "65f28ad4b594aebe22157d6fac869786a255b7eb"
+git-tree-sha1 = "1833212fd6f580c20d4291da9c1b4e8a655b128e"
 uuid = "6c6e2e6c-3030-632d-7369-2d6c69616d65"
-version = "0.1.4"
+version = "1.0.0"
 
 [[deps.Markdown]]
 deps = ["Base64"]
@@ -703,14 +604,14 @@ version = "1.4.3"
 
 [[deps.OpenSSL_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
-git-tree-sha1 = "7493f61f55a6cce7325f197443aa80d32554ba10"
+git-tree-sha1 = "a9697f1d06cc3eb3fb3ad49cc67f2cfabaac31ea"
 uuid = "458c3c95-2e84-50aa-8efc-19380b2a3a95"
-version = "3.0.15+3"
+version = "3.0.16+0"
 
 [[deps.OrderedCollections]]
-git-tree-sha1 = "12f1439c4f986bb868acda6ea33ebc78e19b95ad"
+git-tree-sha1 = "cc4054e898b852042d7b503313f7ad03de99c3dd"
 uuid = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
-version = "1.7.0"
+version = "1.8.0"
 
 [[deps.Parsers]]
 deps = ["Dates", "PrecompileTools", "UUIDs"]
@@ -722,18 +623,16 @@ version = "2.8.1"
 deps = ["Artifacts", "Dates", "Downloads", "FileWatching", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "Random", "SHA", "TOML", "Tar", "UUIDs", "p7zip_jll"]
 uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 version = "1.11.0"
+weakdeps = ["REPL"]
 
     [deps.Pkg.extensions]
     REPLExt = "REPL"
 
-    [deps.Pkg.weakdeps]
-    REPL = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
-
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
-git-tree-sha1 = "eba4810d5e6a01f612b948c9fa94f905b49087b0"
+git-tree-sha1 = "7e71a55b87222942f0f9337be62e26b1f103d3e4"
 uuid = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
-version = "0.7.60"
+version = "0.7.61"
 
 [[deps.PooledArrays]]
 deps = ["DataAPI", "Future"]
@@ -762,6 +661,11 @@ version = "2.4.0"
 [[deps.Printf]]
 deps = ["Unicode"]
 uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+version = "1.11.0"
+
+[[deps.REPL]]
+deps = ["InteractiveUtils", "Markdown", "Sockets", "StyledStrings", "Unicode"]
+uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
 version = "1.11.0"
 
 [[deps.Random]]
@@ -817,14 +721,18 @@ version = "1.11.1"
 
 [[deps.StringManipulation]]
 deps = ["PrecompileTools"]
-git-tree-sha1 = "a6b1675a536c5ad1a60e5a5153e1fee12eb146e3"
+git-tree-sha1 = "725421ae8e530ec29bcbdddbe91ff8053421d023"
 uuid = "892a3eda-7b42-436c-8928-eab12a02cf0e"
-version = "0.4.0"
+version = "0.4.1"
 
 [[deps.StructTypes]]
 deps = ["Dates", "UUIDs"]
 git-tree-sha1 = "159331b30e94d7b11379037feeb9b690950cace8"
 uuid = "856f2bd8-1eba-4b0a-8007-ebc267875bd4"
+version = "1.11.0"
+
+[[deps.StyledStrings]]
+uuid = "f489334b-da3d-4c2e-b8f0-e476e12c162b"
 version = "1.11.0"
 
 [[deps.TOML]]
@@ -860,9 +768,9 @@ uuid = "3bb67fe8-82b1-5028-8e26-92a6c54297fa"
 version = "0.11.3"
 
 [[deps.Tricks]]
-git-tree-sha1 = "7822b97e99a1672bfb1b49b668a6d46d58d8cbcb"
+git-tree-sha1 = "6cae795a5a9313bbb4f60683f7263318fc7d1505"
 uuid = "410a4b4d-49e4-4fbc-ab6d-cb71b17b3775"
-version = "0.1.9"
+version = "0.1.10"
 
 [[deps.URIs]]
 git-tree-sha1 = "67db6cc7b3821e19ebe75791a9dd19c9b1188f2b"
@@ -919,57 +827,48 @@ version = "17.4.0+2"
 # ╟─9e980f1f-3897-493d-99ef-7883eaf174d6
 # ╟─4fc37f0c-c84d-4451-8ab1-76e37cbc1eb1
 # ╟─133a4585-23ab-4c55-a97b-f841cbe672b6
-# ╟─4f637ab6-b490-4651-8c2d-85b148694a9a
 # ╟─a6dfa529-f1e1-46a1-84bc-43c68e931dde
-# ╟─dc060870-4a03-4fa8-8d27-c4bde0ab0a9c
 # ╠═2ff2be70-af14-11ee-3d58-9b67f9c734c7
 # ╟─2acfb967-e2ad-4772-a81d-d0cc98dd7355
-# ╟─20ceda13-98fb-41c8-a853-7a55de45e65e
+# ╟─0e4ca764-6c70-47e8-b4f3-1de3ce177a04
+# ╟─b47cc02d-6baf-4cf9-898c-7d8cf1383261
 # ╠═f2cb8ae6-6bcf-4d17-bbd7-12b07565fd52
+# ╟─755292f3-d472-4b30-bf81-a80e2d830e7e
+# ╟─20ceda13-98fb-41c8-a853-7a55de45e65e
 # ╠═904559d5-5a0c-4c6c-9175-23aae545e55f
-# ╠═8a07bf20-fdc8-4867-a781-3b19f1ce6436
-# ╠═bf514c3e-1f3b-460e-9f43-e924e6eb8280
+# ╟─1f08921c-ff00-47f2-8aba-c887e6d7a1fa
+# ╟─141a0d20-2ba3-462f-b02c-f1d0e8f8873d
+# ╠═fc23383f-808f-479d-a0bc-8e8a896063f9
+# ╠═62197d1b-91a8-4145-9221-cdec831fe335
+# ╠═90e88806-a860-4b3f-acdb-861c841e9879
 # ╟─593af85e-e1a9-4ab1-bc70-31188111b5ab
 # ╟─4ec54437-d86c-43ce-b132-f86baaad61bc
 # ╠═6413c68f-84ed-47e8-b62e-e900e83b51e1
 # ╟─30be2eb0-bf49-4951-be28-f0f577667281
 # ╟─792ae644-7230-4225-b862-5b8cb94cbb12
 # ╠═0cdc0c2b-4990-448b-be62-e83b01080cf1
-# ╟─d7f05838-c922-44ba-b2cd-29cae6a063c3
+# ╟─7b2f8906-5d8c-41b9-b174-c53b3188cf97
+# ╟─8e3de84a-f354-4885-a79f-9a7d024a2ff8
+# ╠═ae736349-ef84-4bc5-a448-f1735ce4ef23
+# ╟─19105601-36d7-46dd-9aaa-19127ad2bc12
+# ╟─0ee78e44-ac3d-4f97-a7ca-25607b941c15
+# ╠═e787069d-3eb2-425f-af42-6103c2fcc8cb
+# ╟─79a1d60c-d9e7-4b97-91b6-975fbdb8873a
 # ╟─2be5e70a-f766-4d98-b2ac-5647a43cbe19
 # ╠═6a41b8b1-f492-43f0-9a1a-74da21b1a03f
-# ╟─ca4150d7-9fe6-4e61-960c-5eb5c7077008
-# ╟─631faf4e-25a0-48bf-9713-d102915ee447
-# ╠═4a43fd49-66a8-48c5-a011-991af53fb969
-# ╟─ceed3b68-2e2b-430b-8c1b-86deb703a589
-# ╟─49360a56-1619-4385-b2d5-13cc5971dfd5
-# ╠═ae736349-ef84-4bc5-a448-f1735ce4ef23
-# ╟─c0ca7327-7c14-4af7-a9df-55839aa4d11e
-# ╟─4c098de4-d683-4432-b132-2ffb4a7c6570
-# ╠═a69f528f-d94a-4519-91dd-a6149c958ba9
 # ╟─c39592ae-974f-4d99-ab8f-c955e1e54897
-# ╟─e3366414-3335-421e-83b1-e2c7fdbbd368
-# ╟─0c53f037-bcf3-4c9c-830d-9341be294639
-# ╠═14fcee89-199e-48b4-8a13-ac8ca9931dc0
-# ╟─e42ab2aa-1242-41f8-882e-b5ba3ed27e57
-# ╟─7e0e9f32-cfad-4594-9aa2-b067130aaf63
+# ╟─05378a7e-562d-44d6-aa11-8c0c2170bf21
 # ╠═09d3292b-caca-4bff-b7cc-48ede0a0aa9d
 # ╟─be920cd2-cd8f-4b5c-85a9-5b9641f4b53d
 # ╟─1c2b32bd-b91e-4cbe-b841-8630666f9898
 # ╟─25db0861-4063-45a5-95f7-be9f28654e8f
-# ╟─ca897b9a-fd6c-42b0-b27f-e86f146723a0
-# ╟─9a722701-84f4-4ca6-bf58-738d3af53e55
-# ╟─10d5b1ed-4925-4eb9-8355-07732389f9ea
 # ╠═1f5d1018-3418-46b7-b8c0-5623254c6c5c
-# ╠═13848809-3b1e-4240-b5d2-348da4957c83
 # ╟─21a68cf1-b5ca-4448-849d-4a2ed232d13b
 # ╟─9063bb97-844f-4ab0-8e60-962d5f7c0ada
 # ╠═a238d349-b9fc-4c7b-b8f7-8ab89711069c
 # ╟─15a03116-4372-4138-a7b7-d8a63305d111
 # ╟─f2eea4f2-98d0-43cc-bf3f-bbe836bc4ce9
 # ╠═a72b989b-d8ff-4529-8ee3-46770dc0fd80
-# ╟─b8646508-525b-49df-b770-2cfa2806c12b
-# ╟─0ef68cda-bd96-4619-a1d2-64cf267877d4
-# ╟─33c2f57f-a9f8-43ef-b8fd-274500dc0d36
+# ╟─ad2fcdc5-0a0a-40aa-9b7c-4f0e02b41f99
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
