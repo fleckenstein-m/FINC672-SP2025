@@ -66,6 +66,12 @@
                 "notebook_path": "notebooks/Lect10/Lect10_noSol.jl",
                 "video_id": "",
                 "preview_image_url": ""
+            },
+            {
+                "name": "Using Web APIs for Data Collection",
+                "notebook_path": "notebooks/Lect11/Lect11_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
             }
         ]
     },    
@@ -84,9 +90,15 @@
                 "video_id": "",
                 "preview_image_url": ""
             },
-                        {
+            {
                 "name": "Assignment 03",
                 "notebook_path": "notebooks/Assignments/Assignment_03_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Assignment 04",
+                "notebook_path": "notebooks/Assignments/Assignment_04_noSol.jl",
                 "video_id": "",
                 "preview_image_url": ""
             }

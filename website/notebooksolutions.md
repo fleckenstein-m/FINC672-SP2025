@@ -9,5 +9,7 @@
 | 5       | Julia Dates and Missing Values     | [Julia Dates and Missing Values](/assets/notebooksolutions/Lect05/Lect05.html)        |
 | 6       | Tabular Data and File I/O          | [Tabular Data and File I/O](/assets/notebooksolutions/Lect06/Lect06.html)             |
 | 7       | Data Visualization                 | [Data Visualization](/assets/notebooksolutions/Lect07/Lect07.html)        |
-| 8       | Empirical Data Analysis using DataFrames  | Mar  04, 2025  | [Empirical Data Analysis using DataFrames](/assets/notebooksolutions/Lect08/Lect08.html)   |
+| 8       | Empirical Data Analysis using DataFrames | [Empirical Data Analysis using DataFrames](/assets/notebooksolutions/Lect08/Lect08.html)   |
 | 9       | Getting Data from Yahoo Finance    |  [Getting Data from Yahoo Finance](/assets/notebooksolutions/Lect09/Lect09.html)        |
+| 10      | Interactive Data Visualization     | [Interactive Data Visualization](/assets/notebooksolutions/Lect10/Lect10.html)        |                      |
+| 11      | Using Web APIs for Data Collection | [Using Web APIs for Data Collection](/assets/notebooksolutions/Lect11/Lect11.html)        |                   

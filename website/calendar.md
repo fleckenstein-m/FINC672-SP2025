@@ -14,6 +14,7 @@
 | 10      | Getting Data from Yahoo Finance    | Mar  11, 2025  | [Getting Data from Yahoo Finance](/assets/notebooksolutions/Lect09/Lect09.html)        |                      |
 | 11      | Getting Data from Yahoo Finance    | Mar  13, 2025  | [Getting Data from Yahoo Finance](/assets/notebooksolutions/Lect09/Lect09.html)        |                      |
 | 12      | Interactive Data Visualization     | Mar  18, 2025  | [Interactive Data Visualization](/assets/notebooksolutions/Lect10/Lect10.html)        |                      |
+| 11      | Using Web APIs for Data Collection | Mar  20, 2025  | [Using Web APIs for Data Collection](/assets/notebooksolutions/Lect11/Lect11.html)        |                      |
 
 ## Assignments
 
@@ -21,4 +22,4 @@
 |:-------:|:------------------------------------------:|:-----------------:|:-------------------------------------------------------:|
 | 1       | Homework 1                                 | Feb 18, 2025      | Assignment 01      |
 | 2       | Homework 2                                 | Mar 4, 2025       | Assignment 02      |
-| 3       | Homework 2                                 | Mar 18, 2025      | Assignment 03      |
+| 3       | Homework 3                                 | Mar 18, 2025      | Assignment 03      |
