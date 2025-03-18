@@ -301,9 +301,6 @@ md"""
 - This process is illustrated below.
 """
 
-# ╔═╡ 9a722701-84f4-4ca6-bf58-738d3af53e55
-LocalResource("stacking.png")
-
 # ╔═╡ 10d5b1ed-4925-4eb9-8355-07732389f9ea
 md"""
 - Let's do this with ESG score data.
@@ -958,7 +955,6 @@ version = "17.4.0+2"
 # ╟─1c2b32bd-b91e-4cbe-b841-8630666f9898
 # ╟─25db0861-4063-45a5-95f7-be9f28654e8f
 # ╟─ca897b9a-fd6c-42b0-b27f-e86f146723a0
-# ╟─9a722701-84f4-4ca6-bf58-738d3af53e55
 # ╟─10d5b1ed-4925-4eb9-8355-07732389f9ea
 # ╠═1f5d1018-3418-46b7-b8c0-5623254c6c5c
 # ╠═13848809-3b1e-4240-b5d2-348da4957c83
