@@ -110,7 +110,7 @@ pages = [
 	(page = "/whyjulia/", title = "Why Julia?"),
 	(page = "/notebooksolutions/", title = "Solutions to Lecture Notebooks"),
 	(page = "/assignmentsolutions/", title = "Solutions to Assignments"),
-	(page = "/cheatsheet/", title = "Cheatsheet")
+	(page = "/cheatsheet/", title = "Study Aids")
 	]
 
 # ╔═╡ c0768146-5ea0-4736-94f8-2c1a2affa922
