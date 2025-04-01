@@ -15,6 +15,10 @@
 | 11      | Getting Data from Yahoo Finance    | Mar  13, 2025  | [Getting Data from Yahoo Finance](/assets/notebooksolutions/Lect09/Lect09.html)        |                      |
 | 12      | Interactive Data Visualization     | Mar  18, 2025  | [Interactive Data Visualization](/assets/notebooksolutions/Lect10/Lect10.html)        |                      |
 | 11      | Using Web APIs for Data Collection | Mar  20, 2025  | [Using Web APIs for Data Collection](/assets/notebooksolutions/Lect11/Lect11.html)        |                      |
+| 12      | Using Web APIs for Data Collection | Apr  1, 2025  | [Using Web APIs for Data Collection](/assets/notebooksolutions/Lect11/Lect11.html)        |                      |
+| 13      | Using Web APIs for Data Collection | Apr  1, 2025  | [Using Web APIs for Data Collection](/assets/notebooksolutions/Lect11/Lect11.html)        |                      |
+| 14      | Introduction to Portfolio Mathematics | Apr 3, 2025  | [Introduction to Portfolio Mathematics](/assets/notebooksolutions/Lect12/Lect12.html)        |                      |
+| 15      | Introduction to Portfolio Mathematics | Apr 8, 2024  | [Introduction to Portfolio Mathematics](/assets/notebooksolutions/Lect12/Lect12.html)        |                      |
 
 ## Assignments
 
@@ -23,3 +27,4 @@
 | 1       | Homework 1                                 | Feb 18, 2025      | Assignment 01      |
 | 2       | Homework 2                                 | Mar 4, 2025       | Assignment 02      |
 | 3       | Homework 3                                 | Mar 18, 2025      | Assignment 03      |
+| 4       | Homework 4                                 | Apr 1, 2025      | Assignment 04      |

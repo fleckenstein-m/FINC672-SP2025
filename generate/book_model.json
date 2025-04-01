@@ -72,6 +72,12 @@
                 "notebook_path": "notebooks/Lect11/Lect11_noSol.jl",
                 "video_id": "",
                 "preview_image_url": ""
+            },
+                        {
+                "name": "Introduction to Portfolio Mathematics",
+                "notebook_path": "notebooks/Lect12/Lect12_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
             }
         ]
     },    
