@@ -80,8 +80,14 @@
                 "preview_image_url": ""
             },
             {
-                "name": "Mean Variance Analysis",
+                "name": "Mean Variance Analysis (a)",
                 "notebook_path": "notebooks/Lect13/Lect13a_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Mean Variance Analysis (b)",
+                "notebook_path": "notebooks/Lect13/Lect13b_noSol.jl",
                 "video_id": "",
                 "preview_image_url": ""
             }
