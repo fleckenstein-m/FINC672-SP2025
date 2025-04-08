@@ -73,9 +73,15 @@
                 "video_id": "",
                 "preview_image_url": ""
             },
-                        {
+            {
                 "name": "Introduction to Portfolio Mathematics",
                 "notebook_path": "notebooks/Lect12/Lect12_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
+            },
+            {
+                "name": "Mean Variance Analysis",
+                "notebook_path": "notebooks/Lect13/Lect13a_noSol.jl",
                 "video_id": "",
                 "preview_image_url": ""
             }
