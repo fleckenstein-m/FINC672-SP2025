@@ -13,3 +13,4 @@
 | 9       | Getting Data from Yahoo Finance    |  [Getting Data from Yahoo Finance](/assets/notebooksolutions/Lect09/Lect09.html)        |
 | 10      | Interactive Data Visualization     | [Interactive Data Visualization](/assets/notebooksolutions/Lect10/Lect10.html)        |                      |
 | 11      | Using Web APIs for Data Collection | [Using Web APIs for Data Collection](/assets/notebooksolutions/Lect11/Lect11.html)        |                   
+| 12      | Intro to Portfolio Mathematics     | [Intro to Portfolio Mathematics](/assets/notebooksolutions/Lect12/Lect12.html)        |                   
