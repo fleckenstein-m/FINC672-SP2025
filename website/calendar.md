@@ -19,6 +19,9 @@
 | 13      | Using Web APIs for Data Collection | Apr  1, 2025  | [Using Web APIs for Data Collection](/assets/notebooksolutions/Lect11/Lect11.html)        |                      |
 | 14      | Introduction to Portfolio Mathematics | Apr 3, 2025  | [Introduction to Portfolio Mathematics](/assets/notebooksolutions/Lect12/Lect12.html)        |                      |
 | 15      | Introduction to Portfolio Mathematics | Apr 8, 2024  | [Introduction to Portfolio Mathematics](/assets/notebooksolutions/Lect12/Lect12.html)        |                      |
+| 16      | Mean-Variance Analysis  (a)        | Apr 15, 2025  | [Mean Variance Analysis](/assets/notebooksolutions/Lect13/Lect13a.html)        |                      |
+| 17      | Mean-Variance Analysis  (b)        | Apr 22, 2025  | [Mean Variance Analysis](/assets/notebooksolutions/Lect13/Lect13b.html)        |                      |
+
 
 ## Assignments
 
@@ -27,4 +30,6 @@
 | 1       | Homework 1                                 | Feb 18, 2025      | Assignment 01      |
 | 2       | Homework 2                                 | Mar 4, 2025       | Assignment 02      |
 | 3       | Homework 3                                 | Mar 18, 2025      | Assignment 03      |
-| 4       | Homework 4                                 | Apr 1, 2025      | Assignment 04      |
+| 4       | Homework 4                                 | Apr 1, 2025       | Assignment 04      |
+| 5       | Homework 5                                 | Apr 8, 2025       | Assignment 05      |
+| 6       | Homework 6                                 | Apr 15, 2025      | Assignment 06      |
