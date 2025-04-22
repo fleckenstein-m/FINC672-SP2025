@@ -90,6 +90,12 @@
                 "notebook_path": "notebooks/Lect13/Lect13b_noSol.jl",
                 "video_id": "",
                 "preview_image_url": ""
+            },
+            {
+                "name": "Capital Asset Pricing Model (CAPM)",
+                "notebook_path": "notebooks/Lect14/Lect14_noSol.jl",
+                "video_id": "",
+                "preview_image_url": ""
             }
         ]
     },    
