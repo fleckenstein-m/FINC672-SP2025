@@ -21,6 +21,7 @@
 | 15      | Introduction to Portfolio Mathematics | Apr 8, 2024  | [Introduction to Portfolio Mathematics](/assets/notebooksolutions/Lect12/Lect12.html)        |                      |
 | 16      | Mean-Variance Analysis  (a)        | Apr 15, 2025  | [Mean Variance Analysis](/assets/notebooksolutions/Lect13/Lect13a.html)        |                      |
 | 17      | Mean-Variance Analysis  (b)        | Apr 22, 2025  | [Mean Variance Analysis](/assets/notebooksolutions/Lect13/Lect13b.html)        |                      |
+| 18      | Mean Variance Analysis  (b)     | Apr 24, 2025  | [Mean Variance Analysis](/assets/notebooksolutions/Lect13/Lect13b.html)        |                      |
 
 
 ## Assignments
@@ -33,3 +34,4 @@
 | 4       | Homework 4                                 | Apr 1, 2025       | Assignment 04      |
 | 5       | Homework 5                                 | Apr 8, 2025       | Assignment 05      |
 | 6       | Homework 6                                 | Apr 15, 2025      | Assignment 06      |
+| 7       | Homework 7                                 | Apr 29, 2025      | Assignment 07      |

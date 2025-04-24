@@ -14,3 +14,5 @@
 | 10      | Interactive Data Visualization     | [Interactive Data Visualization](/assets/notebooksolutions/Lect10/Lect10.html)        |                      |
 | 11      | Using Web APIs for Data Collection | [Using Web APIs for Data Collection](/assets/notebooksolutions/Lect11/Lect11.html)        |                   
 | 12      | Intro to Portfolio Mathematics     | [Intro to Portfolio Mathematics](/assets/notebooksolutions/Lect12/Lect12.html)        |                   
+| 13      | Mean Variance Analysis I           | [Mean Variance Analysis I](/assets/notebooksolutions/Lect13/Lect13a.html)        |                   
+| 14      | Mean Variance Analysis II          | [Mean Variance Analysis II](/assets/notebooksolutions/Lect13/Lect13b.html)        |                   
