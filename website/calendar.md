@@ -22,6 +22,8 @@
 | 16      | Mean-Variance Analysis  (a)        | Apr 15, 2025  | [Mean Variance Analysis](/assets/notebooksolutions/Lect13/Lect13a.html)        |                      |
 | 17      | Mean-Variance Analysis  (b)        | Apr 22, 2025  | [Mean Variance Analysis](/assets/notebooksolutions/Lect13/Lect13b.html)        |                      |
 | 18      | Mean Variance Analysis  (b)     | Apr 24, 2025  | [Mean Variance Analysis](/assets/notebooksolutions/Lect13/Lect13b.html)        |                      |
+| 19      | Mean Variance Analysis  (b)     | Apr 29, 2025  | [Mean Variance Analysis](/assets/notebooksolutions/Lect13/Lect13b.html)        |                      |
+| 20      | CAPM     | May 1, 2025  | [CAPM](/assets/notebooksolutions/Lect14/Lect14.html)        |                      |
 
 
 ## Assignments
@@ -35,3 +37,4 @@
 | 5       | Homework 5                                 | Apr 8, 2025       | Assignment 05      |
 | 6       | Homework 6                                 | Apr 15, 2025      | Assignment 06      |
 | 7       | Homework 7                                 | Apr 29, 2025      | Assignment 07      |
+
