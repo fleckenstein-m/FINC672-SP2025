@@ -422,11 +422,11 @@ Means and Covariances
 
 # ╔═╡ 652dc6ae-6f9d-4ebd-9251-00821a8ee09d
 # begin
-# 	μ =     #expected returns
+# 	μ = []    #expected returns
 	
 # 	Σ = [
-# 		 
-# 		  ]/100^2
+		 
+# 		 ]/100^2
 	
 # 	Rf = 
 
@@ -508,7 +508,12 @@ $$\beta_i = \textrm{Cov}(R_i,R_T)/\textrm{Var}(R_T).$$
 
 # 	β = 
 	
-
+# 	for i = 1:n
+# 		wi     = 
+# 		wi[i]  = 
+# 		CoviT = 
+# 		β[i]   = 
+# 	end
 
 # 	with_terminal() do
 # 		printred("β of the $n assets:")
@@ -603,7 +608,8 @@ md"""
 
 # ╔═╡ 0c383eff-dd4e-422f-8e44-c5aed1c4bc86
 # begin
-# 	FF = 
+	
+# FF = 
 	
 	
 # end
@@ -629,9 +635,10 @@ md"""
 
 # ╔═╡ 2b33bbbc-d75a-4632-976b-f33d58bde38f
 # begin
-# 	FFPort  = 
 	
-
+# FFPort  = 
+	
+	
 # end
 
 # ╔═╡ c79f5ab4-6791-40c0-820c-f3a278f33255
@@ -654,10 +661,7 @@ Select test portfolios: 1=small to 5=high
 TestPortfolios = ["SMALL LoBM","ME2 BM2","ME3 BM3","ME4 BM4","BIG HiBM"]
 
 # ╔═╡ b627de77-ad3f-4c2a-b48d-12a0389937b9
-# begin
-	
-	
-# end
+
 
 # ╔═╡ dc594338-c14f-493b-be20-ba54eb3f6f45
 vspace
@@ -675,9 +679,11 @@ md"""
 
 # ╔═╡ 9ec800c1-5f3c-43fd-81e3-25fa492454f5
 # begin
-# 	FFTestportfolios = 
+	
+# FFTestportfolios = 
 	
 
+	
 # end
 
 # ╔═╡ 168f7790-2d8e-4a67-ab29-0443301299ae
@@ -691,11 +697,14 @@ md"""
 # ╔═╡ be19f8e2-dd77-4990-a5db-9161ba57139e
 # ╠═╡ show_logs = false
 # begin
-# 	Rme  = 
-# 	RSMB = 
-# 	RHML = 
-# 	rf   = 
-# 	display("")
+	
+# 	Rme  = FFTestportfolios[:,"Mkt-RF"]   #market excess return
+# 	RSMB = FFTestportfolios[:,"SMB"]      #small minus big firms
+# 	RHML = FFTestportfolios[:,"HML"]      #high minus low book-to-market ratio
+# 	rf   = FFTestportfolios[:,"RF"]       #interest rate
+	
+# 	display("") #surpress output
+	
 # end
 
 # ╔═╡ fe7ff034-66cd-49c3-8d63-7d6899f8da69
@@ -703,8 +712,11 @@ vspace
 
 # ╔═╡ 593bc8f4-ef30-40b9-8029-de755659acad
 # begin
+# 	#TestPortfolios
 # 	Re = 
 	
+# 	Re = 
+		
 # 	(T,nAssets) = 
 	
 # 	with_terminal() do
@@ -744,32 +756,45 @@ md"""
 vspace
 
 # ╔═╡ fdbc9826-148e-4390-a1cd-6c8b6fe742d5
-# #------------------------------------------------------------------------------
-# """
-#     OlsGMFn(Y,X)
+#------------------------------------------------------------------------------
+"""
+    OlsGMFn(Y,X)
 
-# LS of Y on X; for one dependent variable, Gauss-Markov assumptions
+LS of Y on X; for one dependent variable, Gauss-Markov assumptions
 
-# **Usage**
-# (b,u,Yhat,V,R2) = OlsGMFn(Y,X)
+**Usage**
+(b,u,Yhat,V,R2) = OlsGMFn(Y,X)
 
-# **Input**
-# - `Y::Vector`:    Tx1, the dependent variable
-# - `X::Matrix`:    Txk matrix of regressors (including deterministic ones)
+**Input**
+- `Y::Vector`:    Tx1, the dependent variable
+- `X::Matrix`:    Txk matrix of regressors (including deterministic ones)
 
-# **Output**
-# - `b::Vector`:    kx1, regression coefficients
-# - `u::Vector`:    Tx1, residuals Y - yhat
-# - `Yhat::Vector`: Tx1, fitted values X*b
-# - `V::Matrix`:    kxk matrix, covariance matrix of b
-# - `R2::Number`:   scalar, R2 value
+**Output**
+- `b::Vector`:    kx1, regression coefficients
+- `u::Vector`:    Tx1, residuals Y - yhat
+- `Yhat::Vector`: Tx1, fitted values X*b
+- `V::Matrix`:    kxk matrix, covariance matrix of b
+- `R2::Number`:   scalar, R2 value
 
-# """
+"""
+
 # function OlsGMFn(Y,X)
 
- 
+#     T    = 
+
+#     b    = 
+#     Yhat = 
+#     u    = 
+
+#     σ2   = 
+#     V    = 
+#     R2   = 
+
+#     return b, u, Yhat, V, R2
+
 # end
-# #------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
 
 
 # ╔═╡ fffd66a4-e727-42eb-af86-25f7ea938236
@@ -777,14 +802,17 @@ vspace
 
 # ╔═╡ a609ab99-1373-4b88-880e-33944dfa12a1
 # begin
-# 	x   = 
-
+	
 # 	α = 
 # 	b = 
+	
 # 	tstat = 
 	
-# 	for i = 1:nAssets                        #loop over the different test assets
+# 	x   = 
 	
+# 	for i = 1:nAssets                        #loop over the different test assets
+
+# 		y = 
 # 		(b_i,_,_,Covb,) = 
 # 		α[i]            = 
 # 		b[i]            = 
@@ -814,12 +842,15 @@ md"""
 	
 # 	α = 
 # 	b = 
+	
 # 	tstat = 
 	
 	
 # 	for i = 1:nAssets                        #loop over the different test assets
 
+# 		df = 
 		
+# 		linReg = 
 	
 # 		α[i]            = 
 # 		b[i]            = 
