@@ -23,7 +23,11 @@
 | 17      | Mean-Variance Analysis  (b)        | Apr 22, 2025  | [Mean Variance Analysis](/assets/notebooksolutions/Lect13/Lect13b.html)        |                      |
 | 18      | Mean Variance Analysis  (b)     | Apr 24, 2025  | [Mean Variance Analysis](/assets/notebooksolutions/Lect13/Lect13b.html)        |                      |
 | 19      | Mean Variance Analysis  (b)     | Apr 29, 2025  | [Mean Variance Analysis](/assets/notebooksolutions/Lect13/Lect13b.html)        |                      |
-| 20      | CAPM     | May 1, 2025  | [CAPM](/assets/notebooksolutions/Lect14/Lect14.html)        |                      |
+| 20      | CAPM        | May 1, 2025  | [CAPM](/assets/notebooksolutions/Lect14/Lect14.html)        |                      |
+| 21      | CAPM (b)    | May 6, 2025  | [CAPM](/assets/notebooksolutions/Lect14/Lect14.html)        |                      |
+| 22      | Efficient Markets                   | May 8, 2024  | [Efficient Markets](/assets/notebooksolutions/Lect15/Lect15.html)        |                      |
+| 23      | Efficient Markets (b)               | May 13, 2024  | [Efficient Markets](/assets/notebooksolutions/Lect15/Lect15.html)        |                      |
+| 24      | Performance Evaluation              | May 15, 2024  | [Performance Evaluation](/assets/notebooksolutions/Lect16/Lect16.html)        |                      |
 
 
 ## Assignments
@@ -37,4 +41,4 @@
 | 5       | Homework 5                                 | Apr 8, 2025       | Assignment 05      |
 | 6       | Homework 6                                 | Apr 15, 2025      | Assignment 06      |
 | 7       | Homework 7                                 | Apr 29, 2025      | Assignment 07      |
-
+| 7       | Homework 8                                 | May 13, 2025      | Assignment 08     |

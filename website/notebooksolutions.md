@@ -16,3 +16,6 @@
 | 12      | Intro to Portfolio Mathematics     | [Intro to Portfolio Mathematics](/assets/notebooksolutions/Lect12/Lect12.html)        |                   
 | 13      | Mean Variance Analysis I           | [Mean Variance Analysis I](/assets/notebooksolutions/Lect13/Lect13a.html)        |                   
 | 14      | Mean Variance Analysis II          | [Mean Variance Analysis II](/assets/notebooksolutions/Lect13/Lect13b.html)        |                   
+| 15      | CAPM                               | [CAPM](/assets/notebooksolutions/Lect14/Lect14.html)                    |                   
+| 16      | Efficient Markets                  | [Efficient Markets](/assets/notebooksolutions/Lect15/Lect15.html)       |
+| 17      | Performance Evaluation             | [Performance Evaluation](/assets/notebooksolutions/Lect16/Lect16.html)  |
